@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MenuData } from '../../layout/header/Header';
+import { mainTheme } from '../styles/Theme';
 
 export const Menu = (props: {items: Array<MenuData>}) => {
   return (
@@ -20,6 +21,25 @@ export const Menu = (props: {items: Array<MenuData>}) => {
 };
 
 const StyledMenu = styled.nav `
-  background-color: #e0e0e0;
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &::before {
+      content: '#';
+      color: ${mainTheme.colors.accent};
+    }
+  }
 `
+
 

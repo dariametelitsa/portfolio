@@ -2,18 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
+import { mainTheme } from '../../components/styles/Theme';
+import { Wrapper } from '../../components/Wrapper';
 
 export const Header = () => {
   return (
     <StyledHeader>
       <Logo />
-      <Menu items={menuItems}/>
+      <Wrapper>
+        <Menu items={menuItems}/>
+        <Select name='language'>
+          <option value="en">En</option>
+          <option value="ru">Ru</option>
+        </Select>
+      </Wrapper>
+      
     </StyledHeader>
   );
 };
 
 const StyledHeader = styled.header `
-  background-color: #282C33;
+  display: flex;
+  justify-content: space-between;
+  font-size: ${mainTheme.fontSize.main};
+  color: ${mainTheme.colors.grey.light};
+  background-color: ${mainTheme.colors.primary};
+`
+
+const Select = styled.select `
+ color: inherit;
 `
 
 export interface MenuData {
