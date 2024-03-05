@@ -15,5 +15,6 @@ export const GlobalStyles = createGlobalStyle `
     font-size: ${mainTheme.fontSize.main};
     line-height: 21px;
     color: ${mainTheme.colors.grey.light};
+      background-color: ${mainTheme.colors.primary};
   }
 `

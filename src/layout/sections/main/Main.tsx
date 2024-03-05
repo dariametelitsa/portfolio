@@ -22,10 +22,11 @@ export const Main = () => {
         </div>
         <StyledPhoto>
           <Photo src={image} alt='Photo of a web-designer.' />
+          {/* <Photo src={photoPng} alt='Photo of a web-designer.' /> */}
           <p>Currently working on <span>Portfolio </span></p>
         </StyledPhoto>
       </Wrapper>
-      <Quote />
+      <Quote quote='With great power comes great electricity bill' author='- Dr. Who' />
     </StyledMain>
   );
 }; 
@@ -74,7 +75,7 @@ const StyledPhoto = styled.div `
       content: '';
       position: absolute;
       left: 8px;
-      top: 11 px;
+      top: 11px;
       width: 16px;
       height: 16px;
       background-color: ${mainTheme.colors.accent};
@@ -87,11 +88,12 @@ const StyledPhoto = styled.div `
 `
 
 const Photo = styled.img `
-  transform: scale(1);
+  position: relative;
   display: block;
   width: 457px;
   height: 386px;
   object-fit: cover;
+  aspect-ratio: 8 / 6;
   object-position: top;
   z-index: 1;
 `
