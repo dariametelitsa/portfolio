@@ -2,8 +2,8 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {SkillsCard, SkillsCardPropsType} from "../../../components/skillsCard/SkillsCard";
-import logo from './../../../assets/Logo1.svg';
-import dots from './../../../assets/Dots.svg';
+import logo from '../../../assets/images/decoration/Logo1.svg';
+import dots from '../../../assets/images/decoration/Dots.svg';
 import {WrapperFlex} from "../../../components/WrapperFlex";
 import {mainTheme} from "../../../components/styles/Theme";
 

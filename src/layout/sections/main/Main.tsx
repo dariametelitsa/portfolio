@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { mainTheme } from '../../../components/styles/Theme';
 import { Button } from '../../../components/Button';
-import logo from './../../../assets/Logo1.svg';
-import dots from './../../../assets/Dots.svg';
+import logo from '../../../assets/images/decoration/Logo1.svg';
+import dots from '../../../assets/images/decoration/Dots.svg';
 
 import image from './../../../assets/Image.png';
 import { WrapperFlex } from '../../../components/WrapperFlex';

@@ -3,10 +3,11 @@ import styled from 'styled-components';
 import {SectionTitle} from "../../../components/SectionTitle";
 import {WrapperFlex} from "../../../components/WrapperFlex";
 import {ProjectCard, ProjectCardPropsType} from "../../../components/projectCard/ProjectCard";
-import prChert from './../../../assets/images/banner-1.png';
-import prProtect from './../../../assets/images/banner-2.jpeg';
-import prKahoot from './../../../assets/images/banner-3.jpeg';
+import prChert from '../../../assets/images/projects/banner-1.png';
+import prProtect from '../../../assets/images/projects/banner-2.jpeg';
+import prKahoot from '../../../assets/images/projects/banner-3.jpeg';
 import {WrapperGrid} from "../../../components/WrapperGrid";
+import {mainTheme} from "../../../components/styles/Theme";
 
 export const Projects = () => {
     return (
@@ -27,7 +28,19 @@ export const Projects = () => {
 };
 
 const StyledProject = styled.section `
+    position: relative;
     background-color: inherit;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        top: 240px;
+        right: -68px;
+        width: 155px;
+        height: 155px;
+        border: 1px solid ${mainTheme.colors.grey.light};
+    }
+    
 `
 const Link = styled.a `
     color: inherit;
