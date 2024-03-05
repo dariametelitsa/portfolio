@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { mainTheme } from '../../../components/styles/Theme';
 import { Button } from '../../../components/Button';
-import photoPng from './../../../assets/images/photo_first.png';
-import sprite from './../../../assets/images/icons.svg';
 import logo from './../../../assets/Logo1.svg';
 import dots from './../../../assets/Dots.svg';
 
@@ -23,7 +21,6 @@ export const Main = () => {
         </div>
         <StyledPhoto>
           <Photo src={image} width={'457px'} height={'386px'} alt='Photo of a web-designer.' />
-          {/* <Photo src={photoPng} alt='Photo of a web-designer.' /> */}
           <p>Currently working on <span>Portfolio </span></p>
         </StyledPhoto>
       </WrapperFlex>
@@ -48,7 +45,6 @@ const Description = styled.p `
 const StyledPhoto = styled.div `
   position: relative;
   &::before {
-    /* content: url('${sprite}#logotypeBg'); */
     content: url(${logo});
     position: absolute;
     left: -20px;

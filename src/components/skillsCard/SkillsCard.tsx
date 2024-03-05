@@ -20,6 +20,7 @@ export const SkillsCard = (props: SkillsCardPropsType) => {
 };
 
 const StyledSkillsCard = styled.div`
+    width: 30%;
     border: 1px solid ${mainTheme.colors.grey.light};
 `;
 
