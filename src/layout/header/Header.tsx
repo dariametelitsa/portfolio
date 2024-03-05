@@ -3,19 +3,19 @@ import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
 import { mainTheme } from '../../components/styles/Theme';
-import { Wrapper } from '../../components/Wrapper';
+import { WrapperFlex } from '../../components/WrapperFlex';
 
 export const Header = () => {
   return (
     <StyledHeader>
       <Logo />
-      <Wrapper>
+      <WrapperFlex>
         <Menu items={menuItems}/>
         <Select name='language'>
           <option value="en">En</option>
           <option value="ru">Ru</option>
         </Select>
-      </Wrapper>
+      </WrapperFlex>
       
     </StyledHeader>
   );

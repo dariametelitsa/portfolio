@@ -7,7 +7,7 @@ type WrapperPropsType = {
   wrap?: boolean,
 }
 
-export const Wrapper = styled.div<WrapperPropsType> `
+export const WrapperFlex = styled.div<WrapperPropsType> `
   display: flex;
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "space-between"};

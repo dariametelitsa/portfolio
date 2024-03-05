@@ -8,24 +8,25 @@ import logo from './../../../assets/Logo1.svg';
 import dots from './../../../assets/Dots.svg';
 
 import image from './../../../assets/Image.png';
-import { Wrapper } from '../../../components/Wrapper';
+import { WrapperFlex } from '../../../components/WrapperFlex';
 import { Quote } from '../../../components/quote/Quote';
+import {Photo} from "../../../components/Photo";
 
 export const Main = () => {
   return (
     <StyledMain>
-      <Wrapper alighI='center'>
+      <WrapperFlex alighI='center'>
         <div>
           <Title>Elias is a <strong>web designer</strong> and <strong>front-end developer</strong></Title>
           <Description>He crafts responsive websites where technologies meet creativity</Description>
           <Button as='a'>Contact me!!</Button>
         </div>
         <StyledPhoto>
-          <Photo src={image} alt='Photo of a web-designer.' />
+          <Photo src={image} width={'457px'} height={'386px'} alt='Photo of a web-designer.' />
           {/* <Photo src={photoPng} alt='Photo of a web-designer.' /> */}
           <p>Currently working on <span>Portfolio </span></p>
         </StyledPhoto>
-      </Wrapper>
+      </WrapperFlex>
       <Quote quote='With great power comes great electricity bill' author='- Dr. Who' />
     </StyledMain>
   );
@@ -85,15 +86,4 @@ const StyledPhoto = styled.div `
       color: #fff;
     }
   }
-`
-
-const Photo = styled.img `
-  position: relative;
-  display: block;
-  width: 457px;
-  height: 386px;
-  object-fit: cover;
-  aspect-ratio: 8 / 6;
-  object-position: top;
-  z-index: 1;
 `
