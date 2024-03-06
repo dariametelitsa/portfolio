@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-type WrapperPropsType = {
+type FlexWrapperPropsType = {
   direction?: string,
   justify?: string,
   alighI?: string,
   wrap?: boolean,
 }
 
-export const WrapperFlex = styled.div<WrapperPropsType> `
+export const FlexWrapper = styled.div<FlexWrapperPropsType> `
   display: flex;
   flex-direction: ${props => props.direction || "row"};
   justify-content: ${props => props.justify || "space-between"};

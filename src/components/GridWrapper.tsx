@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-type WrapperGridPropsType = {
+type GridWrapperPropsType = {
     column?: string,
 }
-export const WrapperGrid = styled.div<WrapperGridPropsType> `
+export const GridWrapper = styled.ul<GridWrapperPropsType> `
     display: grid;
     font-weight: 400;
     grid-template-columns: repeat(${props => props.column || 3}, 1fr);

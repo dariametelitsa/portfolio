@@ -6,14 +6,14 @@ import logo from '../../../assets/images/decoration/Logo1.svg';
 import dots from '../../../assets/images/decoration/Dots.svg';
 
 import image from './../../../assets/Image.png';
-import {WrapperFlex} from '../../../components/WrapperFlex';
+import {FlexWrapper} from '../../../components/FlexWrapper';
 import {Quote} from '../../../components/quote/Quote';
 import {Photo} from "../../../components/Photo";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <WrapperFlex alighI='center'>
+            <FlexWrapper alighI='center'>
                 <div>
                     <Title>Elias is a <strong>web designer</strong> and <strong>front-end developer</strong></Title>
                     <Description>He crafts responsive websites where technologies meet creativity</Description>
@@ -23,7 +23,7 @@ export const Main = () => {
                     <Photo src={image} width={'457px'} height={'386px'} alt='Photo of a web-designer.'/>
                     <p>Currently working on <span>Portfolio </span></p>
                 </StyledPhoto>
-            </WrapperFlex>
+            </FlexWrapper>
             <Quote quote='With great power comes great electricity bill' author='- Dr. Who'/>
         </StyledMain>
     );

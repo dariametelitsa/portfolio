@@ -4,14 +4,14 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {SkillsCard, SkillsCardPropsType} from "../../../components/skillsCard/SkillsCard";
 import logo from '../../../assets/images/decoration/Logo1.svg';
 import dots from '../../../assets/images/decoration/Dots.svg';
-import {WrapperFlex} from "../../../components/WrapperFlex";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 import {mainTheme} from "../../../components/styles/Theme";
 
 export const Skills = () => {
     return (
         <StyledSkills>
             <SectionTitle line={'239px'}>skills</SectionTitle>
-            <WrapperFlex>
+            <FlexWrapper>
                 <Pictures />
                 <SkillsBlock role={'group'}>
                     {
@@ -20,7 +20,7 @@ export const Skills = () => {
                         })
                     }
                 </SkillsBlock>
-            </WrapperFlex>
+            </FlexWrapper>
         </StyledSkills>
     );
 };

@@ -1,28 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import {SectionTitle} from "../../../components/SectionTitle";
-import {WrapperFlex} from "../../../components/WrapperFlex";
+import {FlexWrapper} from "../../../components/FlexWrapper";
 import {ProjectCard, ProjectCardPropsType} from "../../../components/projectCard/ProjectCard";
 import prChert from '../../../assets/images/projects/banner-1.png';
 import prProtect from '../../../assets/images/projects/banner-2.jpeg';
 import prKahoot from '../../../assets/images/projects/banner-3.jpeg';
-import {WrapperGrid} from "../../../components/WrapperGrid";
+import { GridWrapper } from "../../../components/GridWrapper";
 import {mainTheme} from "../../../components/styles/Theme";
 
-export const Projects = () => {
+export const  Projects = () => {
     return (
         <StyledProject>
-            <WrapperFlex>
+            <FlexWrapper>
                 <SectionTitle line={'511px'}>projects</SectionTitle>
                 <Link href='#2'>View all &#126;&#126;&gt;</Link>
-            </WrapperFlex>
-            <WrapperGrid as={'ul'} role={'group'}>
+            </FlexWrapper>
+            <GridWrapper role={'group'}>
                 {
                 ProjectsArr.map((el:ProjectCardPropsType) => {
                     return (<ProjectCard src={el.src} tags={el.tags} title={el.title} text={el.text} buttonText={el.buttonText} projectLink={el.projectLink} />);
                 })
             }
-            </WrapperGrid>
+            </GridWrapper>
         </StyledProject>
     );
 };

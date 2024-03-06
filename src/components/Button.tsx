@@ -9,4 +9,5 @@ export const Button = styled.button `
   font-size: ${mainTheme.fontSize.main};
   line-height: 21px;
   border: 1px solid ${mainTheme.colors.accent};
+    background-color: transparent;
 `

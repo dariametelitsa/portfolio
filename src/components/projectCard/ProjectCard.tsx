@@ -29,6 +29,7 @@ export const ProjectCard = (props: ProjectCardPropsType) => {
 
 const StyledProjectCard = styled.li `
     width: 100%;
+    list-style-type: none;
     border: 1px solid ${mainTheme.colors.grey.light};
 `
 

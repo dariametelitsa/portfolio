@@ -21,6 +21,7 @@ export const SkillsCard = (props: SkillsCardPropsType) => {
 
 const StyledSkillsCard = styled.li`
     width: 30%;
+    list-style-type: none;
     border: 1px solid ${mainTheme.colors.grey.light};
 `;
 
