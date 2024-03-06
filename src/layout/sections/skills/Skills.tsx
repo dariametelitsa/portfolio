@@ -13,7 +13,7 @@ export const Skills = () => {
             <SectionTitle line={'239px'}>skills</SectionTitle>
             <WrapperFlex>
                 <Pictures />
-                <SkillsBlock>
+                <SkillsBlock role={'group'}>
                     {
                         skillsArr.map((el: SkillsCardPropsType) => {
                             return <SkillsCard title={el.title} skills={el.skills} />
@@ -29,7 +29,7 @@ const StyledSkills = styled.section `
     padding: 100px;
 `
 
-const SkillsBlock = styled.div `
+const SkillsBlock = styled.ul `
     width: 60%;
     margin-left: auto;
     display: flex;

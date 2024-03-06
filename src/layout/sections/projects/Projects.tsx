@@ -16,7 +16,7 @@ export const Projects = () => {
                 <SectionTitle line={'511px'}>projects</SectionTitle>
                 <Link href='#2'>View all &#126;&#126;&gt;</Link>
             </WrapperFlex>
-            <WrapperGrid>
+            <WrapperGrid as={'ul'} role={'group'}>
                 {
                 ProjectsArr.map((el:ProjectCardPropsType) => {
                     return (<ProjectCard src={el.src} tags={el.tags} title={el.title} text={el.text} buttonText={el.buttonText} projectLink={el.projectLink} />);

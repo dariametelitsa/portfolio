@@ -6,11 +6,11 @@ import { mainTheme } from '../styles/Theme';
 export const Menu = (props: {items: Array<MenuData>}) => {
   return (
     <StyledMenu>
-      <ul>
+      <ul role={'menu'}>
         {
           props.items.map((el: MenuData, index: number) => {
             return (
-            <li key={index}>
+            <li role={'menuitem'} key={index}>
               <a href={el.link}>{el.item}</a>
             </li>);
           })
