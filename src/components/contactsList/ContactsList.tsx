@@ -7,14 +7,14 @@ export const ContactsList = () => {
         <StyledContactsList>
             <b>Message me here</b>
             <ul role={'group'}>
-                <li>!Elias#3519</li>
-                <li>elias@elias.me</li>
+                <li><a href={'tel:88005558628'} ></a>88005558628</li>
+                <li><a href={'mailto:elias@elias.me'} ></a>elias@elias.me</li>
             </ul>
         </StyledContactsList>
     );
 };
 
-const StyledContactsList = styled.div`
+const StyledContactsList = styled.address`
     padding: 16px;
     border: 1px solid ${mainTheme.colors.grey.light};
     

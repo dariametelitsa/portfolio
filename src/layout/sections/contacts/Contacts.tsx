@@ -27,6 +27,3 @@ const StyledContacts = styled.section`
         top: 94px;
     }
 `
-
-const Message = styled.div `
-`
