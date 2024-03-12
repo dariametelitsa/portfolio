@@ -7,32 +7,35 @@ import { Photo } from "../../../components/Photo";
 import  image from './../../../assets/images/about/photo_sec.png.png';
 import dots from './../../../assets/images/decoration/Dots.svg';
 import { mainTheme } from "../../../components/styles/Theme";
+import { Container } from "../../../components/Container";
 
 export const About = () => {
     return (
         <StyledAbout>
-            <SectionTitle line={'326px'}>about-me</SectionTitle>
-            <FlexWrapper>
-                <Text>
-                    <p>Hello, i’m Elias!</p>
-                    <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from
-                    scratch and raise them into modern user-friendly web experiences.</p>
-                    <p>Transforming my creativity and knowledge intoZ a websites has been my passion for over a year. I
-                    have been helping various clients to establish their presence online. I always strive to learn about
-                    the newest technologies and frameworks.</p>
-                    <Button> Read more &#126;&gt;</Button>
-                </Text>
-                <StyledPhoto>
-                    <Photo src={image} width={'339px'} height={'507px'}/>
-                </StyledPhoto>
-
-            </FlexWrapper>
+            <Container>
+                <SectionTitle line={'326px'}>about-me</SectionTitle>
+                <FlexWrapper>
+                    <Text>
+                        <p>Hello, i’m Elias!</p>
+                        <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from
+                            scratch and raise them into modern user-friendly web experiences.</p>
+                        <p>Transforming my creativity and knowledge intoZ a websites has been my passion for over a year. I
+                            have been helping various clients to establish their presence online. I always strive to learn about
+                            the newest technologies and frameworks.</p>
+                        <Button> Read more &#126;&gt;</Button>
+                    </Text>
+                    <StyledPhoto>
+                        <Photo src={image} width={'339px'} height={'507px'}/>
+                    </StyledPhoto>
+                </FlexWrapper>
+            </Container>
         </StyledAbout>
     );
 };
 
 const StyledAbout = styled.section`
     position: relative;
+    
     &::after{
         content: url(${dots});
         position: absolute;

@@ -2,19 +2,39 @@ import { createGlobalStyle } from "styled-components";
 import { mainTheme } from "./Theme";
 
 export const GlobalStyles = createGlobalStyle `
-  *,
-  *::before,
-  *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-  body {
-    font-weight: 400;
-    font-size: ${mainTheme.fontSize.main};
-    line-height: 21px;
-    color: ${mainTheme.colors.grey.light};
-      background-color: ${mainTheme.colors.primary};
-  }
+    body {
+        margin: 0;
+        font-weight: 400;
+        font-size: ${mainTheme.fontSize.main};
+        line-height: 1.2;
+        color: ${mainTheme.colors.grey.light};
+        background-color: ${mainTheme.colors.primary};
+    }
+
+    a {
+        color: ${mainTheme.colors.grey.light};
+        text-decoration: unset;
+        cursor: pointer;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    section {
+        padding: 112px 0;
+    }
+
 `

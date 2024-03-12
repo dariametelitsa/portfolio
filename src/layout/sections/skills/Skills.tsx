@@ -6,27 +6,29 @@ import logo from '../../../assets/images/decoration/Logo1.svg';
 import dots from '../../../assets/images/decoration/Dots.svg';
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {mainTheme} from "../../../components/styles/Theme";
+import { Container } from "../../../components/Container";
 
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle line={'239px'}>skills</SectionTitle>
-            <FlexWrapper>
-                <Pictures />
-                <SkillsBlock role={'group'}>
-                    {
-                        skillsArr.map((el: SkillsCardPropsType) => {
-                            return <SkillsCard title={el.title} skills={el.skills} />
-                        })
-                    }
-                </SkillsBlock>
-            </FlexWrapper>
+            <Container>
+                <SectionTitle line={'239px'}>skills</SectionTitle>
+                <FlexWrapper>
+                    <Pictures />
+                    <SkillsBlock role={'group'}>
+                        {
+                            skillsArr.map((el: SkillsCardPropsType) => {
+                                return <SkillsCard title={el.title} skills={el.skills} />
+                            })
+                        }
+                    </SkillsBlock>
+                </FlexWrapper>
+            </Container>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section `
-    padding: 100px;
 `
 
 const SkillsBlock = styled.ul `
