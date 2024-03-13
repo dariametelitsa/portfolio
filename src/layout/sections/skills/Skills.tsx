@@ -40,7 +40,7 @@ const SkillsBlock = styled.ul`
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap-reverse;
-    height: 250px;
+    height: 270px;
 
     li:nth-child(n+7) {
         display: none;

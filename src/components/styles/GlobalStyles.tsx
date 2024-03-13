@@ -12,15 +12,20 @@ export const GlobalStyles = createGlobalStyle `
 
     body {
         margin: 0;
+        
         font-weight: 400;
         font-size: ${mainTheme.fontSize.main};
+        font-family: "Fira Code", monospace;
+        font-optical-sizing: auto;
         line-height: 1.2;
+        
         color: ${mainTheme.colors.grey.light};
         background-color: ${mainTheme.colors.primary};
     }
 
     a {
-        color: ${mainTheme.colors.grey.light};
+        color: ${mainTheme.colors.font};
+        font-weight: 500;
         text-decoration: unset;
         cursor: pointer;
     }

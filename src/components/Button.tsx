@@ -3,7 +3,6 @@ import { mainTheme } from "./styles/Theme";
 
 export const Button = styled.button `
   display: inline-block;
-  color: white;
   padding: 8px 16px;
   font-weight: 500;
   font-size: ${mainTheme.fontSize.main};

@@ -7,12 +7,13 @@ type SectionTitlePropsType = {
 export const SectionTitle = styled.h2<SectionTitlePropsType> `
     position: relative;
     font-size: ${mainTheme.fontSize.headline};
-    color: #fff;
+    font-weight: 500;
     text-transform: lowercase;
     margin-bottom: 23px;
     
     &::before {
         content: '#';
+        letter-spacing: 2px;
         color: ${mainTheme.colors.accent};
     }
     

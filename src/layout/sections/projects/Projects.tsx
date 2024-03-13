@@ -47,7 +47,6 @@ const StyledProject = styled.section`
 
 `
 const Link = styled.a`
-    color: inherit;
     text-decoration: none;
 `
 

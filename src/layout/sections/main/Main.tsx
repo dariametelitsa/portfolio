@@ -16,17 +16,19 @@ export const Main = () => {
         <StyledMain>
             <Container>
                 <FlexWrapper alighI='center'>
-                    <div>
+                    <TextWrapper>
                         <Title>Elias is a <strong>web designer</strong> and <strong>front-end developer</strong></Title>
                         <Description>He crafts responsive websites where technologies meet creativity</Description>
                         <Button as='a'>Contact me!!</Button>
-                    </div>
+                    </TextWrapper>
                     <StyledPhoto>
                         <Photo src={image} width={'457px'} height={'386px'} alt='Photo of a web-designer.'/>
-                        <p>Currently working on <span>Portfolio </span></p>
+                        <Status>Currently working on <span>Portfolio </span></Status>
                     </StyledPhoto>
                 </FlexWrapper>
-                <Quote quote='With great power comes great electricity bill' author='- Dr. Who'/>
+                <FlexWrapper justify={'center'}>
+                    <Quote quote='With great power comes great electricity bill' author='- Dr. Who'/>
+                </FlexWrapper>
             </Container>
 
         </StyledMain>
@@ -39,10 +41,19 @@ const StyledMain = styled.section`
 
 const Title = styled.h1`
     color: ${mainTheme.colors.font};
+    font-size: ${mainTheme.fontSize.headline};
+    
+    & strong {
+        color: ${mainTheme.colors.accent};
+    }
 `
 
 const Description = styled.p`
     margin: 32px 0 24px;
+`
+
+const TextWrapper = styled.div`
+    width: 50%;
 `
 
 const StyledPhoto = styled.div`
@@ -50,6 +61,7 @@ const StyledPhoto = styled.div`
 
     &::before {
         content: url(${logo});
+        
         position: absolute;
         left: -20px;
         top: 20%;
@@ -58,32 +70,38 @@ const StyledPhoto = styled.div`
 
     &::after {
         content: url(${dots});
+        
         position: absolute;
         right: 16px;
         bottom: 100px;
         z-index: 1;
     }
+    
+`
 
-    p {
-        position: relative;
-        padding: 8px 34px;
-        max-width: 402px;
-        width: 100%;
-        color: inherit;
-        border: 1px solid ${mainTheme.colors.grey.light};
+const Status = styled.p `
+    position: relative;
+    margin-left: 20px;
+    
+    padding: 8px 34px;
+    max-width: 402px;
+    width: 100%;
+    
+    color: inherit;
+    
+    border: 1px solid ${mainTheme.colors.grey.light};
 
-        &::before {
-            content: '';
-            position: absolute;
-            left: 8px;
-            top: 11px;
-            width: 16px;
-            height: 16px;
-            background-color: ${mainTheme.colors.accent};
-        }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        top: 11px;
+        width: 16px;
+        height: 16px;
+        background-color: ${mainTheme.colors.accent};
+    }
 
-        span {
-            color: ${mainTheme.colors.font};
-        }
+    span {
+        color: ${mainTheme.colors.font};
     }
 `
