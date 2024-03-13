@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { mainTheme } from "../styles/Theme";
 
 export type SocialMenuPropsType = {
+    title: string,
     links: Array<SocialPropsType>,
 }
 
@@ -16,7 +17,7 @@ type SocialPropsType = {
 export const SocialMenu = (props: SocialMenuPropsType) => {
     return (
         <StyledSocialMenu>
-            <Title>Media</Title>
+            <Title>{props.title}</Title>
             <ul>
                 {
                     props.links.map((props: SocialPropsType) => {

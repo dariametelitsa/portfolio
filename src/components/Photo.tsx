@@ -6,9 +6,9 @@ export const Photo = styled.img.attrs((props) => ({
   height: props.height,
   alt: props.alt,
 }))`
-  position: relative;
   display: block;
   width: ${props => props.width};
   height: ${props => props.height};
   object-fit: cover;
+  object-position: 0 0;
 `

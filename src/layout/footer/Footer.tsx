@@ -18,7 +18,7 @@ export const Footer = () => {
                         <a href={'mailto:elias@elias-dev.ml'}>elias@elias-dev.ml</a>
                         <p>Web designer and front-end developer</p>
                     </Info>
-                    <SocialMenu links={socials}></SocialMenu>
+                    <SocialMenu links={socials} title={'Media'}></SocialMenu>
                 </FlexWrapper>
                 <Copyright>© Copyright 2022. Made by Elias</Copyright>
             </Container>
