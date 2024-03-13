@@ -6,7 +6,6 @@ import { ProjectCard, ProjectCardPropsType } from "../../../components/projectCa
 import prChert from '../../../assets/images/projects/banner-1.png';
 import prProtect from '../../../assets/images/projects/banner-2.jpeg';
 import prKahoot from '../../../assets/images/projects/banner-3.jpeg';
-import { GridWrapper } from "../../../components/GridWrapper";
 import { mainTheme } from "../../../components/styles/Theme";
 import { Container } from "../../../components/Container";
 
@@ -18,14 +17,14 @@ export const Projects = () => {
                     <SectionTitle line={'511px'}>projects</SectionTitle>
                     <Link href='#2'>View all &#126;&#126;&gt;</Link>
                 </FlexWrapper>
-                <GridWrapper role={'group'}>
+                <FlexWrapper gap={'16px'} role={'group'} alighI={'flex-start'}>
                     {
                         ProjectsArr.map((el: ProjectCardPropsType) => {
                             return (<ProjectCard src={el.src} tags={el.tags} title={el.title} text={el.text}
                                                  buttonText={el.buttonText} projectLink={el.projectLink}/>);
                         })
                     }
-                </GridWrapper>
+                </FlexWrapper>
             </Container>
         </StyledProject>
     );
@@ -44,11 +43,19 @@ const StyledProject = styled.section`
         height: 155px;
         border: 1px solid ${mainTheme.colors.grey.light};
     }
-
 `
 const Link = styled.a`
+    display: inline-block;
     text-decoration: none;
+    
+    transition: 0.2s ease-in-out;
+    
+     &:hover {
+         color: ${mainTheme.colors.accent};;
+         transform: translateX(-30px);
+     }
 `
+
 
 const ProjectsArr: Array<ProjectCardPropsType> = [
     {

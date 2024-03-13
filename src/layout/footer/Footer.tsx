@@ -4,6 +4,8 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Logo } from "../../components/logo/Logo";
 import { Icon } from "../../components/icon/Icon";
 import { Container } from "../../components/Container";
+import { mainTheme } from "../../components/styles/Theme";
+import { IconLink } from "../../components/IconLink";
 
 export const Footer = () => {
     return (
@@ -16,33 +18,58 @@ export const Footer = () => {
                         <p>Web designer and front-end developer</p>
                     </Info>
                     <Media>
-                        <h4>Media</h4>
+                        <Title>Media</Title>
                         <ul>
-                            <li><a href="#1" aria-label={'GitHub'}><Icon iconId={'github'}/></a></li>
-                            <li><a href="#2" aria-label={'Figma'}><Icon iconId={'figma'}/></a></li>
-                            <li><a href="#3" aria-label={'Discord'}><Icon iconId={'discord'}/></a></li>
+                            <li><IconLink href="#1" aria-label={'GitHub'}><Icon iconId={'github'}/></IconLink></li>
+                            <li><IconLink href="#2" aria-label={'Figma'}><Icon iconId={'figma'}/></IconLink></li>
+                            <li><IconLink href="#3" aria-label={'Discord'}><Icon iconId={'discord'}/></IconLink></li>
                         </ul>
                     </Media>
                 </FlexWrapper>
-                <small>© Copyright 2022. Made by Elias</small>
+                <Copyright>© Copyright 2022. Made by Elias</Copyright>
             </Container>
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
+    padding: 32px 0;
+    border-top: 1px solid ${mainTheme.colors.grey.light};
 `
 
 const Info = styled.div`
+    & svg {
+        margin-right: 24px;
+    }
+
+    a {
+        font-weight: 400;
+        color: ${mainTheme.colors.grey.light};
+        vertical-align: top;
+    }
+
+    p {
+        margin-top: 16px;
+        color: ${mainTheme.colors.font};
+    }
 `
 
 const Media = styled.div`
     ul {
         display: flex;
-        gap: 23px;
+        gap: 8px;
     }
+`
 
-    li {
-        list-style-type: none;
-    }
+const Title = styled.h4`
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: ${mainTheme.fontSize.title};
+    color: ${mainTheme.colors.font};
+`
+
+const Copyright = styled.small`
+    display: block;
+    margin-top: 48px;
+    text-align: center;
 `

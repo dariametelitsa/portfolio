@@ -27,10 +27,14 @@ const StyledSkillsCard = styled.li`
 
 const Title = styled.h4`
     padding: 8px;
+    font-weight: 600;
+    color: ${mainTheme.colors.font};
     border-bottom: 1px solid ${mainTheme.colors.grey.light};
 `;
 
 const Skills = styled.strong`
     display: block;
     padding: 8px;
+    font-weight: 400;
+    line-height: 1.5;
 `;

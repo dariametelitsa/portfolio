@@ -17,7 +17,7 @@ export const Skills = () => {
                     <Pictures/>
                     <SkillsBlock role={'group'}>
                         {
-                            skillsArr.map((el: SkillsCardPropsType, index) => {
+                            skillsArr.reverse().map((el: SkillsCardPropsType, index) => {
                                 return <SkillsCard title={el.title} skills={el.skills}/>
                             })
                         }
@@ -33,14 +33,13 @@ const StyledSkills = styled.section`
 `
 
 const SkillsBlock = styled.ul`
-
     margin-left: auto;
     display: flex;
     gap: 16px;
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap-reverse;
-    height: 270px;
+    height: 300px;
 
     li:nth-child(n+7) {
         display: none;
@@ -50,11 +49,13 @@ const SkillsBlock = styled.ul`
 
 const Pictures = styled.div`
     position: relative;
-    width: 350px;
+    top: -30px;
+    width: 382px;
     height: 282px;
     background-image: url(${logo}), url(${dots}), url(${dots});
-    background-position: 15px 125px, 177px 143px, 0 38px;
+    background-position: 48px 164px, 210px 143px, 32px 38px;
     background-repeat: no-repeat;
+    background-size: 30%, 17%, 17%;
     object-fit: contain;
 
     &::before,
@@ -80,23 +81,23 @@ const Pictures = styled.div`
 
 const skillsArr: Array<SkillsCardPropsType> = [
     {
-        title: 'Tools',
-        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
-    },
-    {
-        title: 'Frameworks',
-        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
-    },
-    {
         title: 'Languages',
         skills: ['TypeScript', 'Lua', 'Python', 'Javascript'],
+    },
+    {
+        title: 'Others',
+        skills: ['HTML', 'CSS', 'EJS', 'SCSS', 'REST', 'Jinja'],
     },
     {
         title: 'Databases',
         skills: ['SQLite', 'PostgreSQL', 'Mongo'],
     },
     {
-        title: 'Others',
-        skills: ['HTML', 'CSS', 'EJS', 'SCSS', 'REST', 'Jinja'],
+        title: 'Frameworks',
+        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
+    },
+    {
+        title: 'Tools',
+        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
     },
 ];

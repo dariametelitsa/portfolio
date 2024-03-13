@@ -3,25 +3,26 @@ import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Icon } from "../../components/icon/Icon";
 import { mainTheme } from "../../components/styles/Theme";
+import { IconLink } from "../../components/IconLink";
 
 export const AsideBar = () => {
     return (
         <StyledAsideBar>
                 <FlexWrapper as={"ul"} direction={'column'}>
                     <ListItem>
-                        <a href="#1">
+                        <IconLink href="#1">
                             <Icon iconId={'github'} />
-                        </a>
+                        </IconLink>
                     </ListItem>
                     <ListItem>
-                        <a href="#2">
+                        <IconLink href="#2">
                             <Icon iconId={'dribble'} />
-                        </a>
+                        </IconLink>
                     </ListItem>
                     <ListItem>
-                        <a href="#3">
+                        <IconLink href="#3">
                             <Icon iconId={'figma'} />
-                        </a>
+                        </IconLink>
                     </ListItem>
                 </FlexWrapper>
         </StyledAsideBar>

@@ -73,8 +73,9 @@ const StyledPhoto = styled.div `
 `
 
 const Text = styled.div`
-    width: 50%;
+    width: 45%;
     p {
         padding-bottom: 27px;
+        line-height: 1.5;
     }
 `

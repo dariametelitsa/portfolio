@@ -18,11 +18,11 @@ export const ProjectCard = (props: ProjectCardPropsType) => {
         <StyledProjectCard>
             <Photo src={props.src} height={'201px'} alt={props.title +`.`} />
             <TagCloud tags={props.tags} />
-            <div>
+            <Description>
                 <Title>{props.title}</Title>
                 <Text>{props.text}</Text>
                 <Button as={'a'} href={props.projectLink}>{props.buttonText}</Button>
-            </div>
+            </Description>
         </StyledProjectCard>
     );
 };
@@ -34,8 +34,14 @@ const StyledProjectCard = styled.li `
 `
 
 const Title = styled.h3 `
+    font-weight: 500;
+    font-size: ${mainTheme.fontSize.title};
 `
 
 const Text = styled.p `
+    margin: 16px 0;
+`
 
+const Description = styled.div `
+    padding: 16px;
 `

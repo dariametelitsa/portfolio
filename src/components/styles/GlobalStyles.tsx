@@ -21,6 +21,10 @@ export const GlobalStyles = createGlobalStyle `
         
         color: ${mainTheme.colors.grey.light};
         background-color: ${mainTheme.colors.primary};
+        
+        &::selection {
+            background-color: ${mainTheme.colors.primary};
+        }
     }
 
     a {
@@ -31,6 +35,9 @@ export const GlobalStyles = createGlobalStyle `
     }
 
     button {
+        font: inherit;
+        font-weight: 500;
+        color: ${mainTheme.colors.font};
         cursor: pointer;
     }
 

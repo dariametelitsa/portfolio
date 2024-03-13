@@ -12,8 +12,8 @@ export const Contacts = () => {
             <Container>
                 <SectionTitle line={'127px'}>contacts</SectionTitle>
                 <FlexWrapper>
-                    <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t
-                        hesitate to contact me</p>
+                    <Information>I’m interested in freelance opportunities. However, if you have other request or question, don’t
+                        hesitate to contact me</Information>
                     <ContactsList/>
                 </FlexWrapper>
             </Container>
@@ -26,7 +26,12 @@ const StyledContacts = styled.section`
     &:before {
         content: url(${dots});
         position: absolute;
-        left: -51px;
-        top: 94px;
+        left: -50px;
+        top: 150px;
     }
+`
+
+const Information = styled.p `
+    width: 45%;
+    line-height: 1.5;
 `
