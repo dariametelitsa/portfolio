@@ -35,6 +35,7 @@ export const About = () => {
 
 const StyledAbout = styled.section`
     position: relative;
+    overflow: hidden;
     
     &::after{
         content: url(${dots});

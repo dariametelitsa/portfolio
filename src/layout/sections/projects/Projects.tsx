@@ -33,6 +33,7 @@ export const Projects = () => {
 
 const StyledProject = styled.section`
     position: relative;
+    overflow: hidden;
 
     &::after {
         content: '';
