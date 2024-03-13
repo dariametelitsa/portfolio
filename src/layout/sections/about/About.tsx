@@ -47,6 +47,7 @@ const StyledAbout = styled.section`
 
 const StyledPhoto = styled.div `
     position: relative;
+    transform: translateY(-13%);
     
     &::before{
         content: url(${dots});
@@ -71,6 +72,7 @@ const StyledPhoto = styled.div `
 `
 
 const Text = styled.div`
+    width: 50%;
     p {
         padding-bottom: 27px;
     }

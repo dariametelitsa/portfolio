@@ -9,6 +9,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsType> `
     font-size: ${mainTheme.fontSize.headline};
     color: #fff;
     text-transform: lowercase;
+    margin-bottom: 23px;
     
     &::before {
         content: '#';

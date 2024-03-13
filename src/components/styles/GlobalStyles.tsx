@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle `
     }
 
     section {
-        padding: 112px 0;
+        padding: 56px 0;
     }
 
 `

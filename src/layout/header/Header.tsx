@@ -26,6 +26,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header `
+  padding: 32px 0;
   font-size: ${mainTheme.fontSize.main};
   color: ${mainTheme.colors.grey.light};
   background-color: ${mainTheme.colors.primary};

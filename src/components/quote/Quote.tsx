@@ -17,6 +17,7 @@ export const Quote = (props: QuotePropsType) => {
 };
 
 const StyledQuote = styled.div`
+    padding-top: 112px;
     display: flex;
     flex-direction: column;
     align-items: center;

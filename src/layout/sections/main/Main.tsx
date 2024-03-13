@@ -34,7 +34,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    height: 100vh;
+    //background-image: radial-gradient(farthest-side at 10% 0, rgba(0, 299, 299, 0.5) 0%, transparent 30%, transparent 100%), radial-gradient(circle farthest-side at 0 50px, rgba(233, 97, 255, 0.4) 0%, transparent 50%, transparent 100%);
 `
 
 const Title = styled.h1`
@@ -42,7 +42,7 @@ const Title = styled.h1`
 `
 
 const Description = styled.p`
-
+    margin: 32px 0 24px;
 `
 
 const StyledPhoto = styled.div`

@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from "styled-components";
-import {SectionTitle} from "../../../components/SectionTitle";
-import {SkillsCard, SkillsCardPropsType} from "../../../components/skillsCard/SkillsCard";
+import { SectionTitle } from "../../../components/SectionTitle";
+import { SkillsCard, SkillsCardPropsType } from "../../../components/skillsCard/SkillsCard";
 import logo from '../../../assets/images/decoration/Logo1.svg';
 import dots from '../../../assets/images/decoration/Dots.svg';
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {mainTheme} from "../../../components/styles/Theme";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { mainTheme } from "../../../components/styles/Theme";
 import { Container } from "../../../components/Container";
 
 export const Skills = () => {
@@ -14,11 +14,11 @@ export const Skills = () => {
             <Container>
                 <SectionTitle line={'239px'}>skills</SectionTitle>
                 <FlexWrapper>
-                    <Pictures />
+                    <Pictures/>
                     <SkillsBlock role={'group'}>
                         {
-                            skillsArr.map((el: SkillsCardPropsType) => {
-                                return <SkillsCard title={el.title} skills={el.skills} />
+                            skillsArr.map((el: SkillsCardPropsType, index) => {
+                                return <SkillsCard title={el.title} skills={el.skills}/>
                             })
                         }
                     </SkillsBlock>
@@ -28,21 +28,27 @@ export const Skills = () => {
     );
 };
 
-const StyledSkills = styled.section `
+const StyledSkills = styled.section`
+
 `
 
-const SkillsBlock = styled.ul `
-    width: 60%;
+const SkillsBlock = styled.ul`
+
     margin-left: auto;
     display: flex;
-    gap: 10px;
-    flex-direction: row;
+    gap: 16px;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    height: 250px;
+
+    li:nth-child(n+7) {
+        display: none;
+    }
+
 `
 
-const Pictures = styled.div `
+const Pictures = styled.div`
     position: relative;
     width: 350px;
     height: 282px;
@@ -50,7 +56,7 @@ const Pictures = styled.div `
     background-position: 15px 125px, 177px 143px, 0 38px;
     background-repeat: no-repeat;
     object-fit: contain;
-    
+
     &::before,
     &::after {
         content: '';
@@ -74,6 +80,14 @@ const Pictures = styled.div `
 
 const skillsArr: Array<SkillsCardPropsType> = [
     {
+        title: 'Tools',
+        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
+    },
+    {
+        title: 'Frameworks',
+        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
+    },
+    {
         title: 'Languages',
         skills: ['TypeScript', 'Lua', 'Python', 'Javascript'],
     },
@@ -82,15 +96,7 @@ const skillsArr: Array<SkillsCardPropsType> = [
         skills: ['SQLite', 'PostgreSQL', 'Mongo'],
     },
     {
-        title: 'Tools',
-        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
-    },
-    {
         title: 'Others',
         skills: ['HTML', 'CSS', 'EJS', 'SCSS', 'REST', 'Jinja'],
-    },
-    {
-        title: 'Frameworks',
-        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
     },
 ];
