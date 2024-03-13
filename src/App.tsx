@@ -8,6 +8,7 @@ import { About } from "./layout/sections/about/About";
 import { Contacts } from "./layout/sections/contacts/Contacts";
 import { Footer } from "./layout/footer/Footer";
 import { AsideBar } from "./layout/asideBar/AsideBar";
+import { AlternativeMain } from "./layout/sections/alternativeMain/AlternativeMain";
 
 function App() {
     return (
@@ -15,7 +16,8 @@ function App() {
             <Header/>
             <AsideBar/>
             <main>
-                <Main/>
+                {/*<Main/>*/}
+                <AlternativeMain/>
                 <Projects/>
                 <Skills/>
                 <About/>

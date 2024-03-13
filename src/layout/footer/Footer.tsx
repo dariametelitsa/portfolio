@@ -6,6 +6,7 @@ import { Icon } from "../../components/icon/Icon";
 import { Container } from "../../components/Container";
 import { mainTheme } from "../../components/styles/Theme";
 import { IconLink } from "../../components/IconLink";
+import { SocialMenu } from "../../components/socialMenu/SocialMenu";
 
 export const Footer = () => {
     return (
@@ -17,14 +18,7 @@ export const Footer = () => {
                         <a href={'mailto:elias@elias-dev.ml'}>elias@elias-dev.ml</a>
                         <p>Web designer and front-end developer</p>
                     </Info>
-                    <Media>
-                        <Title>Media</Title>
-                        <ul>
-                            <li><IconLink href="#1" aria-label={'GitHub'}><Icon iconId={'github'}/></IconLink></li>
-                            <li><IconLink href="#2" aria-label={'Figma'}><Icon iconId={'figma'}/></IconLink></li>
-                            <li><IconLink href="#3" aria-label={'Discord'}><Icon iconId={'discord'}/></IconLink></li>
-                        </ul>
-                    </Media>
+                    <SocialMenu links={socials}></SocialMenu>
                 </FlexWrapper>
                 <Copyright>© Copyright 2022. Made by Elias</Copyright>
             </Container>
@@ -54,22 +48,26 @@ const Info = styled.div`
     }
 `
 
-const Media = styled.div`
-    ul {
-        display: flex;
-        gap: 8px;
-    }
-`
-
-const Title = styled.h4`
-    margin-bottom: 12px;
-    font-weight: 500;
-    font-size: ${mainTheme.fontSize.title};
-    color: ${mainTheme.colors.font};
-`
-
 const Copyright = styled.small`
     display: block;
     margin-top: 48px;
     text-align: center;
 `
+
+const socials = [
+    {
+        link: '#1',
+        name: 'GitHub',
+        icon: 'github',
+    },
+    {
+        link: '#2',
+        name: 'Figma',
+        icon: 'figma',
+    },
+    {
+        link: '#3',
+        name: 'Discord',
+        icon: 'discord',
+    },
+];
