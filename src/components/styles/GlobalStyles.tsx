@@ -17,6 +17,7 @@ export const GlobalStyles = createGlobalStyle `
         line-height: 1.2;
         color: ${mainTheme.colors.grey.light};
         background-color: ${mainTheme.colors.primary};
+        overflow: hidden;
     }
 
     a {
