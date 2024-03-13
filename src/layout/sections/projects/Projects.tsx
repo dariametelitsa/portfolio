@@ -13,7 +13,7 @@ export const Projects = () => {
     return (
         <StyledProject>
             <Container>
-                <FlexWrapper>
+                <FlexWrapper alighI={'flex-start'}>
                     <SectionTitle line={'511px'}>projects</SectionTitle>
                     <Link href='#2'>View all &#126;&#126;&gt;</Link>
                 </FlexWrapper>
@@ -63,7 +63,7 @@ const ProjectsArr: Array<ProjectCardPropsType> = [
         tags: ['HTML', 'SCSS', 'Python', 'Flask'],
         title: "ChertNodes",
         text: "Minecraft servers hosting",
-        buttonText: "Live <~~>",
+        buttonText: "Live ~~>",
         projectLink: "#1",
     },
     {
@@ -71,7 +71,7 @@ const ProjectsArr: Array<ProjectCardPropsType> = [
         tags: ['React', 'Express', 'Discord.js', 'Node.js,', 'HTML', 'SCSS', 'Python', 'Flask'],
         title: "ProtectX",
         text: "Discord anti-crash bot",
-        buttonText: "Live <~~>",
+        buttonText: "Live ~~>",
         projectLink: "#2",
     },
     {
@@ -79,7 +79,7 @@ const ProjectsArr: Array<ProjectCardPropsType> = [
         tags: ['CSS', 'Express', 'Node.js'],
         title: "Kahoot Answers Viewer",
         text: "Get answers to your kahoot quiz",
-        buttonText: "Live <~~>",
+        buttonText: "Live ~~>",
         projectLink: "#3",
     },
 ];

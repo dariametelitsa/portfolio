@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { mainTheme } from "./Theme";
 
-export const GlobalStyles = createGlobalStyle `
+export const GlobalStyles = createGlobalStyle`
     *,
     *::before,
     *::after {
@@ -12,19 +12,15 @@ export const GlobalStyles = createGlobalStyle `
 
     body {
         margin: 0;
-        
+
         font-weight: 400;
         font-size: ${mainTheme.fontSize.main};
         font-family: "Fira Code", monospace;
         font-optical-sizing: auto;
         line-height: 1.2;
-        
+
         color: ${mainTheme.colors.grey.light};
         background-color: ${mainTheme.colors.primary};
-        
-        &::selection {
-            background-color: ${mainTheme.colors.primary};
-        }
     }
 
     a {
@@ -49,4 +45,10 @@ export const GlobalStyles = createGlobalStyle `
         padding: 56px 0;
     }
 
+    a:focus-visible,
+    button:focus-visible,
+    select:focus-visible {
+        outline: 2px solid ${mainTheme.colors.font};
+        box-shadow: 0 0 0 5px transparent, 0 0 0 5px ${mainTheme.colors.accent};
+    }
 `
