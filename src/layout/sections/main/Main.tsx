@@ -1,45 +1,48 @@
 import React from 'react';
 import styled from 'styled-components';
-import {mainTheme} from '../../../components/styles/Theme';
-import {Button} from '../../../components/Button';
+import { mainTheme } from '../../../components/styles/Theme';
+import { Button } from '../../../components/Button';
 import logo from '../../../assets/images/decoration/Logo1.svg';
 import dots from '../../../assets/images/decoration/Dots.svg';
 
 import image from './../../../assets/Image.png';
-import {FlexWrapper} from '../../../components/FlexWrapper';
-import {Quote} from '../../../components/quote/Quote';
-import {Photo} from "../../../components/Photo";
+import { FlexWrapper } from '../../../components/FlexWrapper';
+import { Quote } from '../../../components/quote/Quote';
+import { Photo } from "../../../components/Photo";
+import { Container } from "../../../components/Container";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper alighI='center'>
-                <div>
-                    <Title>Elias is a <strong>web designer</strong> and <strong>front-end developer</strong></Title>
-                    <Description>He crafts responsive websites where technologies meet creativity</Description>
-                    <Button as='a'>Contact me!!</Button>
-                </div>
-                <StyledPhoto>
-                    <Photo src={image} width={'457px'} height={'386px'} alt='Photo of a web-designer.'/>
-                    <p>Currently working on <span>Portfolio </span></p>
-                </StyledPhoto>
-            </FlexWrapper>
-            <Quote quote='With great power comes great electricity bill' author='- Dr. Who'/>
+            <Container>
+                <FlexWrapper alighI='center'>
+                    <div>
+                        <Title>Elias is a <strong>web designer</strong> and <strong>front-end developer</strong></Title>
+                        <Description>He crafts responsive websites where technologies meet creativity</Description>
+                        <Button as='a'>Contact me!!</Button>
+                    </div>
+                    <StyledPhoto>
+                        <Photo src={image} width={'457px'} height={'386px'} alt='Photo of a web-designer.'/>
+                        <p>Currently working on <span>Portfolio </span></p>
+                    </StyledPhoto>
+                </FlexWrapper>
+                <Quote quote='With great power comes great electricity bill' author='- Dr. Who'/>
+            </Container>
+
         </StyledMain>
     );
 };
 
 const StyledMain = styled.section`
-    background-color: ${mainTheme.colors.primary};
-    height: 100vh;
+    //background-image: radial-gradient(farthest-side at 10% 0, rgba(0, 299, 299, 0.5) 0%, transparent 30%, transparent 100%), radial-gradient(circle farthest-side at 0 50px, rgba(233, 97, 255, 0.4) 0%, transparent 50%, transparent 100%);
 `
 
 const Title = styled.h1`
-    color: #fff;
+    color: ${mainTheme.colors.font};
 `
 
 const Description = styled.p`
-
+    margin: 32px 0 24px;
 `
 
 const StyledPhoto = styled.div`
@@ -50,7 +53,7 @@ const StyledPhoto = styled.div`
         position: absolute;
         left: -20px;
         top: 20%;
-        z-index: 0;
+        z-index: -1;
     }
 
     &::after {
@@ -58,7 +61,7 @@ const StyledPhoto = styled.div`
         position: absolute;
         right: 16px;
         bottom: 100px;
-        z-index: 2;
+        z-index: 1;
     }
 
     p {
@@ -80,7 +83,7 @@ const StyledPhoto = styled.div`
         }
 
         span {
-            color: #fff;
+            color: ${mainTheme.colors.font};
         }
     }
 `

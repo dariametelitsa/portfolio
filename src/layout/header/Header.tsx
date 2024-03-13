@@ -4,26 +4,29 @@ import { Logo } from '../../components/logo/Logo';
 import { Menu } from '../../components/menu/Menu';
 import { mainTheme } from '../../components/styles/Theme';
 import { FlexWrapper } from '../../components/FlexWrapper';
+import { Container } from "../../components/Container";
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <Logo />
-      <FlexWrapper>
-        <Menu items={menuItems}/>
-        <Select name='language'>
-          <option value="en">En</option>
-          <option value="ru">Ru</option>
-        </Select>
-      </FlexWrapper>
-      
+      <Container>
+        <FlexWrapper>
+          <Logo />
+          <FlexWrapper>
+            <Menu items={menuItems}/>
+            <Select name='language'>
+              <option value="en">En</option>
+              <option value="ru">Ru</option>
+            </Select>
+          </FlexWrapper>
+        </FlexWrapper>
+      </Container>
     </StyledHeader>
   );
 };
 
 const StyledHeader = styled.header `
-  display: flex;
-  justify-content: space-between;
+  padding: 32px 0;
   font-size: ${mainTheme.fontSize.main};
   color: ${mainTheme.colors.grey.light};
   background-color: ${mainTheme.colors.primary};

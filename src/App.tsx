@@ -7,16 +7,20 @@ import { Skills } from "./layout/sections/skills/Skills";
 import { About } from "./layout/sections/about/About";
 import { Contacts } from "./layout/sections/contacts/Contacts";
 import { Footer } from "./layout/footer/Footer";
+import { AsideBar } from "./layout/asideBar/AsideBar";
 
 function App() {
     return (
         <div className="App">
             <Header/>
-            <Main/>
-            <Projects/>
-            <Skills/>
-            <About/>
-            <Contacts/>
+            <AsideBar/>
+            <main>
+                <Main/>
+                <Projects/>
+                <Skills/>
+                <About/>
+                <Contacts/>
+            </main>
             <Footer/>
         </div>
     );
