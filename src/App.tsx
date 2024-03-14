@@ -17,7 +17,7 @@ function App() {
             <AsideBar/>
             <main>
                 <AlternativeMain/>
-                <Main/>
+                {/*<Main/>*/}
                 <Projects/>
                 <Skills/>
                 <About/>

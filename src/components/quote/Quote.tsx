@@ -18,7 +18,7 @@ export const Quote = (props: QuotePropsType) => {
 };
 
 const StyledQuote = styled.div`
-    padding-top: 112px;
+    padding-top: 110px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

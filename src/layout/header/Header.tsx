@@ -5,6 +5,7 @@ import { Menu } from '../../components/menu/Menu';
 import { mainTheme } from '../../components/styles/Theme';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { Container } from "../../components/Container";
+import { Button } from "../../components/Button";
 
 export const Header = () => {
     return (
@@ -12,12 +13,13 @@ export const Header = () => {
             <Container>
                 <FlexWrapper>
                     <Logo/>
-                    <FlexWrapper>
+                    <FlexWrapper alighI={'center'}>
                         <Menu items={menuItems}/>
                         <Select name='language'>
                             <option value="en">En</option>
                             <option value="ru">Ru</option>
                         </Select>
+                        <Button as={'a'} href={''} download>Download CV</Button>
                     </FlexWrapper>
                 </FlexWrapper>
             </Container>
@@ -35,7 +37,6 @@ const StyledHeader = styled.header`
 const Select = styled.select`
     display: inline-block;
     margin-left: 32px;
-    margin-top: -2px;
     padding: 0;
     
     color: inherit;
@@ -46,6 +47,10 @@ const Select = styled.select`
 
     border: none;
     background-color: transparent;
+    
+    & + a {
+        margin-left: 50px;
+    }
 `
 
 export interface MenuData {
