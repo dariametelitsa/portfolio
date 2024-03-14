@@ -15,9 +15,9 @@ function App() {
             <Header/>
             <AsideBar/>
             <Routes>
-                <Route path={'home'} element={<Home />} />
-                <Route path={'projects'} element={<Projects/>} />
-                <Route path={'about'} element={<About/>} />
+                <Route path={'home'} element={<Home/>}/>
+                <Route path={'projects'} element={<Projects/>}/>
+                <Route path={'about'} element={<About/>}/>
             </Routes>
             <Footer/>
         </BrowserRouter>
