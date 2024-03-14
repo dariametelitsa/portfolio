@@ -61,11 +61,11 @@ export interface MenuData {
 const menuItems: Array<MenuData> = [
     {
         item: 'home',
-        link: '#1'
+        link: ''
     },
     {
         item: 'works',
-        link: '#2'
+        link: 'projects'
     },
     {
         item: 'about-me',
