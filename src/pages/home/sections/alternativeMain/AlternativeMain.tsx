@@ -58,10 +58,11 @@ const AbsoluteWrap = styled.div`
     justify-content: space-between;
     position: absolute;
     width: 100%;
-    top:400px;
+    top: 400px;
 `
 
 const PhotoWrapper = styled.div`
+
     width: 100%;
     position: relative;
     display: flex;
@@ -133,10 +134,10 @@ const TextAnimation = styled.span`
         width: 110%;
         z-index: -1;
 
-            animation: ${GlitchPath} 5s step-end infinite,
-            ${GlitchOpacity} 5s step-end infinite,
-            ${GlitchFont} 7s step-end infinite,
-            ${GlitchMovement} 10s step-end infinite;
+        animation: ${GlitchPath} 5s step-end infinite,
+        ${GlitchOpacity} 5s step-end infinite,
+        ${GlitchFont} 7s step-end infinite,
+        ${GlitchMovement} 10s step-end infinite;
     }
 
     &::before {
