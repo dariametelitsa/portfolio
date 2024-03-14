@@ -4,14 +4,13 @@ import { Header } from './layout/header/Header';
 import { Footer } from "./layout/footer/Footer";
 import { AsideBar } from "./layout/asideBar/AsideBar";
 import { Home } from "./pages/home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Projects } from "./pages/projects/Projects";
 import { About } from "./pages/about/About";
 
-
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Header/>
             <AsideBar/>
             <Routes>
@@ -20,7 +19,7 @@ function App() {
                 <Route path={'about'} element={<About/>}/>
             </Routes>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

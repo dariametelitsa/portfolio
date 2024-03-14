@@ -4,16 +4,27 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStyles } from './components/styles/GlobalStyles';
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
+const router = createHashRouter([
+    {
+        path: "/*",
+        element: <App/>,
+    }
+]);
+
 root.render(
-  <React.StrictMode>
-    <App />
-    <GlobalStyles/>
-  </React.StrictMode>
+    <React.StrictMode>
+        <RouterProvider router={router}/>
+        <App/>
+        <GlobalStyles/>
+    </React.StrictMode>
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
