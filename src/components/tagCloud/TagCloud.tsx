@@ -20,6 +20,5 @@ const StyledTagCloud = styled.p `
     gap: 8px;
     padding: 8px;
     line-height: 1.5;
-    border-top: 1px solid ${mainTheme.colors.grey.light};
     border-bottom: 1px solid ${mainTheme.colors.grey.light};
 `

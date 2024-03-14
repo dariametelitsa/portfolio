@@ -6,9 +6,9 @@ import {Photo} from "../Photo";
 import {mainTheme} from "../styles/Theme";
 
 export type ProjectCardPropsType = {
-    src: string,
+    src?: string,
     tags: Array<string>,
-    title: string,
+    title?: string,
     text: string,
     buttonText: string,
     projectLink: string,
@@ -16,7 +16,8 @@ export type ProjectCardPropsType = {
 export const ProjectCard = (props: ProjectCardPropsType) => {
     return (
         <StyledProjectCard>
-            <Photo src={props.src} height={'201px'} alt={props.title +`.`} />
+            {/*{props.src ? <Photo src={props.src} height={'201px'} alt={props.title +`.`} /> : null}*/}
+            {props.src && <Photo src={props.src} height={'201px'} alt={props.title +`.`} />}
             <TagCloud tags={props.tags} />
             <Description>
                 <Title>{props.title}</Title>
@@ -31,6 +32,10 @@ const StyledProjectCard = styled.li `
     width: 100%;
     list-style-type: none;
     border: 1px solid ${mainTheme.colors.grey.light};
+    
+    & ${Photo} {
+        border-bottom: 1px solid ${mainTheme.colors.grey.light};
+    }
 `
 
 const Title = styled.h3 `
