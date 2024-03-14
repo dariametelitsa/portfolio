@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio/static/js/main.e5d413cb.js",
+    "main.js": "/portfolio/static/js/main.9c6c32af.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/photo_about.png": "/portfolio/static/media/photo_about.7bcd2b4f1a51f2b8e794.png",
-    "static/media/photo_first.png": "/portfolio/static/media/photo_first.65611fdfe5a943f2d0f8.png",
+    "static/media/photo_about.png": "/portfolio/static/media/photo_about.832d3db190a553a380ee.png",
+    "static/media/photo_first.png": "/portfolio/static/media/photo_first.ab6e08c6f238440cff18.png",
+    "static/media/banner-5.png": "/portfolio/static/media/banner-5.9ff914d2b34b545c64d3.png",
     "static/media/banner-2.jpeg": "/portfolio/static/media/banner-2.8e7fabb1165b3d84382a.jpeg",
     "static/media/banner-1.png": "/portfolio/static/media/banner-1.5602e6bcbe2e7570cae4.png",
     "static/media/banner-3.jpeg": "/portfolio/static/media/banner-3.9630f931f47c40c527b1.jpeg",
+    "static/media/banner-4.jpeg": "/portfolio/static/media/banner-4.a241798c517b0e017baa.jpeg",
     "static/media/icons.svg": "/portfolio/static/media/icons.4929faccdec02b605508e544139cf281.svg",
     "static/media/Dots.svg": "/portfolio/static/media/Dots.06ab6f7ae25d4358b333d02e8d554374.svg",
     "static/media/Logo1.svg": "/portfolio/static/media/Logo1.b64888325238978116475220edb1c182.svg",
     "index.html": "/portfolio/index.html",
     "static/media/quote.svg": "/portfolio/static/media/quote.1eb401d2509d00b403bc200bd4f9f047.svg",
     "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
-    "main.e5d413cb.js.map": "/portfolio/static/js/main.e5d413cb.js.map",
+    "main.9c6c32af.js.map": "/portfolio/static/js/main.9c6c32af.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e5d413cb.js"
+    "static/js/main.9c6c32af.js"
   ]
 }
