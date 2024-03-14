@@ -18,7 +18,6 @@ export const Skills = () => {
                     }
                 </SkillsBlock>
             </Container>
-
         </StyledSkills>
     );
 };

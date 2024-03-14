@@ -1,7 +1,5 @@
 import React from 'react';
 import { PageTitle } from "../../components/pageTitle/PageTitle";
-
-import { Container } from "../../components/Container";
 import { Info } from "./sections/info/Info";
 import { Skills } from "./sections/skills/Skills";
 
