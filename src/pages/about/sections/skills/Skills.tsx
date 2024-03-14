@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from "styled-components";
-import { PageTitle } from "../../../../components/pageTitle/PageTitle";
 import { SectionTitle } from "../../../../components/SectionTitle";
 import { Container } from "../../../../components/Container";
 import { SkillsCard, SkillsCardPropsType } from "../../../../components/skillsCard/SkillsCard";
@@ -13,7 +12,7 @@ export const Skills = () => {
                 <SectionTitle>skills</SectionTitle>
                 <SkillsBlock role={'group'}>
                     {
-                        skillsArr.map((el: SkillsCardPropsType, index) => {
+                        skillsArr.map((el: SkillsCardPropsType) => {
                             return <SkillsCard title={el.title} skills={el.skills} width={'18%'}/>
                         })
                     }
