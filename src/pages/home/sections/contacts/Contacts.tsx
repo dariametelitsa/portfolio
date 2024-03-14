@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { ContactsList } from "../../../components/contactsList/ContactsList";
-import dots from './../../../assets/images/decoration/Dots.svg';
-import { Container } from "../../../components/Container";
+import { SectionTitle } from "../../../../components/SectionTitle";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { ContactsList } from "../../../../components/contactsList/ContactsList";
+import dots from '../../../../assets/images/decoration/Dots.svg';
+import { Container } from "../../../../components/Container";
 
 export const Contacts = () => {
     return (

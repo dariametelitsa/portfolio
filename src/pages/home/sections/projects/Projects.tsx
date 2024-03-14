@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SectionTitle } from "../../../components/SectionTitle";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { ProjectCard, ProjectCardPropsType } from "../../../components/projectCard/ProjectCard";
-import prChert from '../../../assets/images/projects/banner-1.png';
-import prProtect from '../../../assets/images/projects/banner-2.jpeg';
-import prKahoot from '../../../assets/images/projects/banner-3.jpeg';
-import { mainTheme } from "../../../components/styles/Theme";
-import { Container } from "../../../components/Container";
+import { SectionTitle } from "../../../../components/SectionTitle";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { ProjectCard, ProjectCardPropsType } from "../../../../components/projectCard/ProjectCard";
+import prChert from '../../../../assets/images/projects/banner-1.png';
+import prProtect from '../../../../assets/images/projects/banner-2.jpeg';
+import prKahoot from '../../../../assets/images/projects/banner-3.jpeg';
+import { mainTheme } from "../../../../components/styles/Theme";
+import { Container } from "../../../../components/Container";
 
 export const Projects = () => {
     return (

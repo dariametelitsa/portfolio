@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mainTheme } from '../../../components/styles/Theme';
-import { Button } from '../../../components/Button';
-import logo from '../../../assets/images/decoration/Logo1.svg';
-import dots from '../../../assets/images/decoration/Dots.svg';
-import image from './../../../assets/Image.png';
-import { FlexWrapper } from '../../../components/FlexWrapper';
-import { Quote } from '../../../components/quote/Quote';
-import { Photo } from "../../../components/Photo";
-import { Container } from "../../../components/Container";
+import { mainTheme } from '../../../../components/styles/Theme';
+import { Button } from '../../../../components/Button';
+import logo from '../../../../assets/images/decoration/Logo1.svg';
+import dots from '../../../../assets/images/decoration/Dots.svg';
+import image from '../../../../assets/Image.png';
+import { FlexWrapper } from '../../../../components/FlexWrapper';
+import { Quote } from '../../../../components/quote/Quote';
+import { Photo } from "../../../../components/Photo";
+import { Container } from "../../../../components/Container";
 
 export const Main = () => {
     return (
@@ -26,7 +26,7 @@ export const Main = () => {
                     </StyledPhoto>
                 </FlexWrapper>
                 <FlexWrapper justify={'center'}>
-                    <Quote quote='With great power comes great electricity bill' author='- Dr. Who'/>
+                    <Quote/>
                 </FlexWrapper>
             </Container>
 

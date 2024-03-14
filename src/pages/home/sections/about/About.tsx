@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from "styled-components";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Button } from "../../../components/Button";
-import { Photo } from "../../../components/Photo";
-import  image from './../../../assets/images/about/photo_about.png';
-import dots from './../../../assets/images/decoration/Dots.svg';
-import { mainTheme } from "../../../components/styles/Theme";
-import { Container } from "../../../components/Container";
+import { SectionTitle } from "../../../../components/SectionTitle";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { Button } from "../../../../components/Button";
+import { Photo } from "../../../../components/Photo";
+import  image from '../../../../assets/images/about/photo_about.png';
+import dots from '../../../../assets/images/decoration/Dots.svg';
+import { mainTheme } from "../../../../components/styles/Theme";
+import { Container } from "../../../../components/Container";
 
 export const About = () => {
     return (

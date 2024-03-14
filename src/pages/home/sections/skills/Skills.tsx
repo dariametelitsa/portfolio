@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
-import { SectionTitle } from "../../../components/SectionTitle";
-import { SkillsCard, SkillsCardPropsType } from "../../../components/skillsCard/SkillsCard";
-import logo from '../../../assets/images/decoration/Logo1.svg';
-import dots from '../../../assets/images/decoration/Dots.svg';
-import { FlexWrapper } from "../../../components/FlexWrapper";
-import { mainTheme } from "../../../components/styles/Theme";
-import { Container } from "../../../components/Container";
+import { SectionTitle } from "../../../../components/SectionTitle";
+import { SkillsCard, SkillsCardPropsType } from "../../../../components/skillsCard/SkillsCard";
+import logo from '../../../../assets/images/decoration/Logo1.svg';
+import dots from '../../../../assets/images/decoration/Dots.svg';
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { mainTheme } from "../../../../components/styles/Theme";
+import { Container } from "../../../../components/Container";
 
 export const Skills = () => {
     return (

@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import { Header } from './layout/header/Header';
-import { Main } from './layout/sections/main/Main';
-import { Projects } from "./layout/sections/projects/Projects";
-import { Skills } from "./layout/sections/skills/Skills";
-import { About } from "./layout/sections/about/About";
-import { Contacts } from "./layout/sections/contacts/Contacts";
+import { Main } from './pages/home/sections/main/Main';
+import { Projects } from "./pages/home/sections/projects/Projects";
+import { Skills } from "./pages/home/sections/skills/Skills";
+import { About } from "./pages/home/sections/about/About";
+import { Contacts } from "./pages/home/sections/contacts/Contacts";
 import { Footer } from "./layout/footer/Footer";
 import { AsideBar } from "./layout/asideBar/AsideBar";
-import { AlternativeMain } from "./layout/sections/alternativeMain/AlternativeMain";
+import { AlternativeMain } from "./pages/home/sections/alternativeMain/AlternativeMain";
 
 function App() {
     return (
