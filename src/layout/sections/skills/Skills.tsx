@@ -17,7 +17,7 @@ export const Skills = () => {
                     <Pictures/>
                     <SkillsBlock role={'group'}>
                         {
-                            skillsArr.reverse().map((el: SkillsCardPropsType, index) => {
+                            skillsArr.slice(0, 5).reverse().map((el: SkillsCardPropsType, index) => {
                                 return <SkillsCard title={el.title} skills={el.skills}/>
                             })
                         }
@@ -40,10 +40,6 @@ const SkillsBlock = styled.ul`
     align-items: flex-start;
     flex-wrap: wrap-reverse;
     height: 300px;
-
-    li:nth-child(n+7) {
-        display: none;
-    }
 
 `
 
@@ -98,6 +94,19 @@ const skillsArr: Array<SkillsCardPropsType> = [
     },
     {
         title: 'Tools',
+        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
+    },
+
+    {
+        title: 'Test 1',
+        skills: ['SQLite', 'PostgreSQL', 'Mongo'],
+    },
+    {
+        title: 'Test 2',
+        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
+    },
+    {
+        title: 'Test 3',
         skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
     },
 ];
