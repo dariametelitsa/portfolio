@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {mainTheme} from "../styles/Theme";
+import {mainTheme} from "../../styles/Theme";
 
 export const TagCloud = (props: {tags: Array<string>}) => {
     return (

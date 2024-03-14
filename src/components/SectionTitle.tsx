@@ -23,6 +23,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsType> `
             content: '';
             position: absolute;
             top: 50%;
+            margin-left: 16px;
             height: 1px;
             width: ${props.line};
             background-color: ${mainTheme.colors.accent};

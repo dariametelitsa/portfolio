@@ -2,12 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { SectionTitle } from "../../../../components/SectionTitle";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
-import { ProjectCard, ProjectCardPropsType } from "../../../../components/projectCard/ProjectCard";
-import prChert from '../../../../assets/images/projects/banner-1.png';
-import prProtect from '../../../../assets/images/projects/banner-2.jpeg';
-import prKahoot from '../../../../assets/images/projects/banner-3.jpeg';
 import { mainTheme } from "../../../../components/styles/Theme";
 import { Container } from "../../../../components/Container";
+import { ProjectsGallery } from "../../../../components/projectsGallery/ProjectsGallery";
+import { projectsBig } from "../../../../assets/Data";
 
 export const Projects = () => {
     return (
@@ -17,14 +15,7 @@ export const Projects = () => {
                     <SectionTitle line={'511px'}>projects</SectionTitle>
                     <Link href='#2'>View all &#126;&#126;&gt;</Link>
                 </FlexWrapper>
-                <FlexWrapper gap={'16px'} role={'group'} alighI={'flex-start'}>
-                    {
-                        ProjectsArr.map((el: ProjectCardPropsType) => {
-                            return (<ProjectCard src={el.src} tags={el.tags} title={el.title} text={el.text}
-                                                 buttonText={el.buttonText} projectLink={el.projectLink}/>);
-                        })
-                    }
-                </FlexWrapper>
+                <ProjectsGallery projects={projectsBig} size={3} />
             </Container>
         </StyledProject>
     );
@@ -55,31 +46,3 @@ const Link = styled.a`
          transform: translateX(-30px);
      }
 `
-
-
-const ProjectsArr: Array<ProjectCardPropsType> = [
-    {
-        src: prChert,
-        tags: ['HTML', 'SCSS', 'Python', 'Flask'],
-        title: "ChertNodes",
-        text: "Minecraft servers hosting",
-        buttonText: "Live ~~>",
-        projectLink: "#1",
-    },
-    {
-        src: prProtect,
-        tags: ['React', 'Express', 'Discord.js', 'Node.js,', 'HTML', 'SCSS', 'Python', 'Flask'],
-        title: "ProtectX",
-        text: "Discord anti-crash bot",
-        buttonText: "Live ~~>",
-        projectLink: "#2",
-    },
-    {
-        src: prKahoot,
-        tags: ['CSS', 'Express', 'Node.js'],
-        title: "Kahoot Answers Viewer",
-        text: "Get answers to your kahoot quiz",
-        buttonText: "Live ~~>",
-        projectLink: "#3",
-    },
-];

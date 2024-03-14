@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import {TagCloud} from "../tagCloud/TagCloud";
-import {Button} from "../Button";
-import {Photo} from "../Photo";
-import {mainTheme} from "../styles/Theme";
+import {Photo} from "../../Photo";
+import {mainTheme} from "../../styles/Theme";
+import { Button } from "../../Button";
+import { TagCloud } from "../tagCloud/TagCloud";
 
 export type ProjectCardPropsType = {
     src?: string,
     tags: Array<string>,
-    title?: string,
+    title: string,
     text: string,
     buttonText: string,
     projectLink: string,
@@ -32,6 +32,7 @@ const StyledProjectCard = styled.li `
     width: 100%;
     list-style-type: none;
     border: 1px solid ${mainTheme.colors.grey.light};
+    align-self: start;
     
     & ${Photo} {
         border-bottom: 1px solid ${mainTheme.colors.grey.light};
@@ -45,6 +46,7 @@ const Title = styled.h3 `
 
 const Text = styled.p `
     margin: 16px 0;
+    line-height: 1.5;
 `
 
 const Description = styled.div `
