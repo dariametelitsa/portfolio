@@ -61,7 +61,7 @@ export interface MenuData {
 const menuItems: Array<MenuData> = [
     {
         item: 'home',
-        link: ''
+        link: 'home'
     },
     {
         item: 'works',
@@ -69,10 +69,10 @@ const menuItems: Array<MenuData> = [
     },
     {
         item: 'about-me',
-        link: '#3'
+        link: 'about'
     },
     {
         item: 'contacts',
-        link: '#4'
+        link: 'contacts'
     }
 ];

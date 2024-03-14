@@ -7,6 +7,7 @@ import dots from '../../../../assets/images/decoration/Dots.svg';
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { mainTheme } from "../../../../components/styles/Theme";
 import { Container } from "../../../../components/Container";
+import { skillsArr } from "../../../../assets/Data";
 
 export const Skills = () => {
     return (
@@ -18,7 +19,7 @@ export const Skills = () => {
                     <SkillsBlock role={'group'}>
                         {
                             skillsArr.slice(0, 5).reverse().map((el: SkillsCardPropsType, index) => {
-                                return <SkillsCard title={el.title} skills={el.skills}/>
+                                return <SkillsCard title={el.title} skills={el.skills} width={'196px'}/>
                             })
                         }
                     </SkillsBlock>
@@ -74,39 +75,3 @@ const Pictures = styled.div`
         bottom: 37px;
     }
 `
-
-const skillsArr: Array<SkillsCardPropsType> = [
-    {
-        title: 'Languages',
-        skills: ['TypeScript', 'Lua', 'Python', 'Javascript'],
-    },
-    {
-        title: 'Others',
-        skills: ['HTML', 'CSS', 'EJS', 'SCSS', 'REST', 'Jinja'],
-    },
-    {
-        title: 'Databases',
-        skills: ['SQLite', 'PostgreSQL', 'Mongo'],
-    },
-    {
-        title: 'Frameworks',
-        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
-    },
-    {
-        title: 'Tools',
-        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
-    },
-
-    {
-        title: 'Test 1',
-        skills: ['SQLite', 'PostgreSQL', 'Mongo'],
-    },
-    {
-        title: 'Test 2',
-        skills: ['React', 'Vue', 'Disnake', 'Discord.js', 'Flask', 'Express.js'],
-    },
-    {
-        title: 'Test 3',
-        skills: ['VSCode', 'Neovim', 'Linux', 'Figma', 'XFCE', 'Arch', 'Git', 'Font Awesome'],
-    },
-];

@@ -5,7 +5,9 @@ import { Footer } from "./layout/footer/Footer";
 import { AsideBar } from "./layout/asideBar/AsideBar";
 import { Home } from "./pages/home/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Main } from "./pages/home/sections/main/Main";
+import { Projects } from "./pages/projects/Projects";
+import { About } from "./pages/about/About";
+
 
 function App() {
     return (
@@ -14,7 +16,8 @@ function App() {
             <AsideBar/>
             <Routes>
                 <Route path={'home'} element={<Home />} />
-                <Route path={'projects'} element={<Main/>} />
+                <Route path={'projects'} element={<Projects/>} />
+                <Route path={'about'} element={<About/>} />
             </Routes>
             <Footer/>
         </BrowserRouter>
