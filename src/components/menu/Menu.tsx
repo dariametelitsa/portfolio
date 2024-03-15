@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { MenuData } from '../../layout/header/Header';
 import { mainTheme } from '../styles/Theme';
+import { Link } from "react-router-dom";
 
 export const Menu = (props: { items: Array<MenuData> }) => {
     return (
@@ -11,7 +12,7 @@ export const Menu = (props: { items: Array<MenuData> }) => {
                     props.items.map((el: MenuData, index: number) => {
                         return (
                             <li role={'menuitem'} key={index}>
-                                <a href={el.link}>{el.item}</a>
+                                <Link to={el.link}>{el.item}</Link>
                             </li>);
                     })
                 }

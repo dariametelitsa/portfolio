@@ -61,18 +61,18 @@ export interface MenuData {
 const menuItems: Array<MenuData> = [
     {
         item: 'home',
-        link: 'home'
+        link: '/'
     },
     {
         item: 'works',
-        link: 'projects'
+        link: '/projects'
     },
     {
         item: 'about-me',
-        link: 'about'
+        link: '/about'
     },
     {
         item: 'contacts',
-        link: 'contacts'
+        link: '/contacts'
     }
 ];
