@@ -3,17 +3,17 @@ import styled from "styled-components";
 import { mainTheme } from "../styles/Theme";
 
 type StyledSkillsCardPropsType = {
-    width?: string
+    grow?: boolean,
 }
 
 export type SkillsCardPropsType = {
     title: string,
     skills: Array<string>,
-    width?: string
+    grow?: boolean,
 }
 export const SkillsCard = (props: SkillsCardPropsType) => {
     return (
-        <StyledSkillsCard width={props.width}>
+        <StyledSkillsCard grow={props.grow}>
             <Title>{props.title}</Title>
             <Skills>{
                 props.skills.reduce((el: string, acc:string) => {
@@ -24,8 +24,9 @@ export const SkillsCard = (props: SkillsCardPropsType) => {
     );
 };
 
-const StyledSkillsCard = styled.li<StyledSkillsCardPropsType> `
-    flex-basis: ${props => props.width || '100%'};
+const StyledSkillsCard = styled.li<StyledSkillsCardPropsType>`
+    width: 192px;
+    flex-grow: ${props => props.grow ? 1 : 0};
     list-style-type: none;
     border: 1px solid ${mainTheme.colors.grey.light};
 `;

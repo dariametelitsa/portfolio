@@ -19,7 +19,7 @@ export const Skills = () => {
                     <SkillsBlock role={'group'}>
                         {
                             skillsArr.slice(0, 5).reverse().map((el: SkillsCardPropsType, index) => {
-                                return <SkillsCard title={el.title} skills={el.skills} width={'196px'}/>
+                                return <SkillsCard title={el.title} skills={el.skills}/>
                             })
                         }
                     </SkillsBlock>

@@ -13,7 +13,7 @@ export const Skills = () => {
                 <SkillsBlock role={'group'}>
                     {
                         skillsArr.map((el: SkillsCardPropsType) => {
-                            return <SkillsCard title={el.title} skills={el.skills} width={'calc(20% - 13px)'}/>
+                            return <SkillsCard title={el.title} skills={el.skills} grow/>
                         })
                     }
                 </SkillsBlock>
@@ -28,6 +28,7 @@ const StyledSkills = styled.section `
 const SkillsBlock = styled.ul `
     display: flex;
     gap: 16px;
+    width: 100%;
     align-items: flex-start;
     flex-wrap: wrap;
 `
