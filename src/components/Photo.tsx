@@ -7,8 +7,9 @@ export const Photo = styled.img.attrs((props) => ({
   alt: props.alt,
 }))`
   display: block;
-  width: ${props => props.width};
+  max-width: ${props => props.width};
+  width: 100%;
   height: ${props => props.height};
   object-fit: cover;
-  object-position: 0 0;
+  object-position: center;
 `

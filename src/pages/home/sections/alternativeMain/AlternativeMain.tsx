@@ -91,6 +91,8 @@ const PhotoWrapper = styled.div`
 
     & img {
         height: 650px;
+        width: 100%;
+        object-fit: contain;
         border-bottom: 1px solid ${mainTheme.colors.accent};
     }
 `

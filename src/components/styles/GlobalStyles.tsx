@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         margin: 0;
-
+        min-width: 360px;
         font-weight: 400;
         font-size: ${mainTheme.fontSize.main};
         font-family: "Fira Code", monospace;
