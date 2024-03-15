@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import {mainTheme} from "../styles/Theme";
+import { mainTheme } from "../styles/Theme";
 
 type StyledSkillsCardPropsType = {
     width?: string
@@ -25,7 +25,7 @@ export const SkillsCard = (props: SkillsCardPropsType) => {
 };
 
 const StyledSkillsCard = styled.li<StyledSkillsCardPropsType> `
-    width: ${props => props.width || '100%'};
+    flex-basis: ${props => props.width || '100%'};
     list-style-type: none;
     border: 1px solid ${mainTheme.colors.grey.light};
 `;
