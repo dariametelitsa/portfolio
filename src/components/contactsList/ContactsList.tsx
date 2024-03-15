@@ -39,7 +39,7 @@ const Item = styled.li`
     position: relative;
 
     & + & {
-        margin-top: 13px;
+        margin-top: 17px;
     }
     
     svg {

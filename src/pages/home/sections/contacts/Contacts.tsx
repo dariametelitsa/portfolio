@@ -23,7 +23,8 @@ export const Contacts = () => {
 
 const StyledContacts = styled.section`
     position: relative;
-    &:before {
+
+    &::before {
         content: url(${dots});
         position: absolute;
         left: -50px;
