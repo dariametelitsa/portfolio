@@ -4,7 +4,7 @@ import { Header } from './layout/header/Header';
 import { Footer } from "./layout/footer/Footer";
 import { AsideBar } from "./layout/asideBar/AsideBar";
 import { Home } from "./pages/home/Home";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Projects } from "./pages/projects/Projects";
 import { About } from "./pages/about/About";
 import { Contacts } from "./pages/contacts/Contacts";
@@ -17,7 +17,7 @@ import { Contacts } from "./pages/contacts/Contacts";
 </Route>*/
 function App() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Header/>
             <AsideBar/>
             <Routes>
@@ -29,7 +29,7 @@ function App() {
                 </Route>
             </Routes>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
