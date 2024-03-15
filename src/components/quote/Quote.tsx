@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { mainTheme } from '../styles/Theme';
 import quote from './../../assets/images/decoration/quote.svg';
+import { quotesArray } from "../../assets/Data";
 
 type QuotePropsType = {
     quote: string,
@@ -75,37 +76,6 @@ const StyledRandomQuote = styled.div`
         border-top: none;
     }
 `
-
-const quotesArray = [
-    {
-        quote: 'With great power comes great electricity bill',
-        author: 'Dr. Who',
-    },
-    {
-        quote: 'Они что, транслируют рекламу прямо в сон? — Да, а разве в двадцатом веке не было рекламы? — Была, но не во сне. Только по радио и телевидению. В журналах, фильмах, на спортивных играх, автобусах, молочных коробках, на майках, банданах и на небе, но не во сне! Ни за что! ',
-        author: 'Futurama',
-    },
-    {
-        quote: 'Мне нравится, что там все люди были равны, будь они белые, чёрные, инопланетяне или даже женщины.',
-        author: 'Futurama'
-    },
-    {
-        quote: 'Когда мы убиваем в детях способность критически мыслить, говоря, что кролики появляются из шляп, мы создаем взрослых, которые верят в астрологию и гомеопатию',
-        author: 'The big bang theory',
-    },
-    {
-        quote: 'Подумайте, что является основной проблемой при охоте на монстров? — Ты второстепенный персонаж и умираешь в течение первых пяти минут фильма',
-        author: 'Gravity Falls',
-    },
-    {
-        quote: 'Ты говоришь как прибожек, выглядишь как прибожек... и просто ты прибожек',
-        author: 'The Witcher',
-    },
-    {
-        quote: 'Лиза, знаешь как я дожила до своих лет? С помощью двух вещей: слепой веры и красного вина.',
-        author: 'The Simpsons',
-    },
-];
 
 function getRandom(min = 0, max = 100):number {
     if (min > max) {
