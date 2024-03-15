@@ -13,7 +13,8 @@ export const mainTheme = {
     headline: '32px',
     title: '24px',
     main: '16px',
-  }
+  },
+  containerPad: '15px',
 }
 
 // export const mainTheme = {

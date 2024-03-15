@@ -57,7 +57,7 @@ const AbsoluteWrap = styled.div`
     align-items: flex-end;
     justify-content: space-between;
     position: absolute;
-    width: 100%;
+    width: calc(100% - ${mainTheme.containerPad} * 2);
     top: 400px;
 `
 
@@ -91,7 +91,6 @@ const PhotoWrapper = styled.div`
 
     & img {
         height: 650px;
-        width: 100%;
         object-fit: contain;
         border-bottom: 1px solid ${mainTheme.colors.accent};
     }
