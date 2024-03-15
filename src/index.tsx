@@ -4,24 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalStyles } from './components/styles/GlobalStyles';
-import { createHashRouter, RouterProvider } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const router = createHashRouter([
-    {
-        path: "/*",
-        element: <App/>,
-    }
-]);
-
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
-        <App/>
         <GlobalStyles/>
+        <App/>
     </React.StrictMode>
 );
 
