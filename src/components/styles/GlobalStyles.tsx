@@ -10,6 +10,16 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
     body {
         margin: 0;
 
@@ -22,6 +32,7 @@ export const GlobalStyles = createGlobalStyle`
         color: ${mainTheme.colors.grey.light};
         background-color: ${mainTheme.colors.primary};
     }
+
 
     a {
         color: ${mainTheme.colors.font};
