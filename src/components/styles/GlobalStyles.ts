@@ -46,6 +46,7 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 500;
         color: ${mainTheme.colors.font};
         cursor: pointer;
+        border: none;
     }
 
     ul {

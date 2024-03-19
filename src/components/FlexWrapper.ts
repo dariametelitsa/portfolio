@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { getKeyEventProps } from "@testing-library/user-event/dist/keyboard/getEventProps";
 
 type FlexWrapperPropsType = {
   direction?: string,

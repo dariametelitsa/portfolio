@@ -15,6 +15,11 @@ export const mainTheme = {
     main: '16px',
   },
   containerPad: '15px',
+
+  media: {
+    tablet: 'screen and (max-width: 768px)',
+    mobile: 'screen and (max-width: 576px)',
+  }
 }
 
 // export const mainTheme = {

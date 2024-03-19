@@ -1,5 +1,5 @@
-import styled, {css} from "styled-components";
-import {mainTheme} from "./styles/Theme";
+import styled, { css } from "styled-components";
+import { mainTheme } from "./styles/Theme";
 
 type SectionTitlePropsType = {
     line?: string;

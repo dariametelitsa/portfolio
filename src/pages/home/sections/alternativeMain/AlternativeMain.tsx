@@ -29,7 +29,7 @@ export const AlternativeMain = () => {
                     <SocialMenu title={'Follow me'} links={socials}></SocialMenu>
                 </AbsoluteWrap>
                 <PhotoWrapper>
-                    <img src={image} height={'600px'} alt="Photo of a web-designer."/>
+                    <img src={image} height={'600px'} alt={"Web-designer."}/>
                     <TextAnimation data-text={'CREATIVE'}>CREATIVE</TextAnimation>
                 </PhotoWrapper>
 
@@ -37,7 +37,6 @@ export const AlternativeMain = () => {
                 <FlexWrapper justify={'center'}>
                     <Quote/>
                 </FlexWrapper>
-
             </Container>
         </StyledAlternativeMain>
     );

@@ -1,12 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
 import { MenuData } from '../../layout/header/Header';
-import { mainTheme } from '../styles/Theme';
 import { Link } from "react-router-dom";
+import { S } from "./Menu_Styles";
 
-export const Menu = (props: { items: Array<MenuData> }) => {
+export const Menu: React.FC<{ items: Array<MenuData> }> = (props: { items: Array<MenuData> }) => {
     return (
-        <StyledMenu>
+        <S.Menu>
             <ul role={'menu'}>
                 {
                     props.items.map((el: MenuData, index: number) => {
@@ -17,30 +16,9 @@ export const Menu = (props: { items: Array<MenuData> }) => {
                     })
                 }
             </ul>
-        </StyledMenu>
+        </S.Menu>
     );
 };
 
-const StyledMenu = styled.nav`
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
-    }
-
-    li {
-        list-style-type: none;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-
-        &::before {
-            content: '#';
-            color: ${mainTheme.colors.accent};
-        }
-    }
-`
 
 
