@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { mainTheme } from "../../components/styles/Theme";
+import { font } from "../../components/styles/common";
 
 const Header = styled.header`
     padding: 32px 0;
@@ -65,6 +66,10 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     select + a,
     select {
         margin-left: 0;
+    }
+    
+    a {
+        ${font({Fmin: 16, Fmax: 32})}
     }
 `
 

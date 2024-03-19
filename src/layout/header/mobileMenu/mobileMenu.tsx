@@ -7,10 +7,10 @@ import { MenuData } from "../Header";
 const MobileMenu: React.FC<{ items: Array<MenuData> }> = (props: { items: Array<MenuData> }) => {
     return (
         <S.MobileMenu>
-            <S.BurgerButton isOpen={true}>
+            <S.BurgerButton isOpen={false}>
                 <span></span>
             </S.BurgerButton>
-            <S.MobileMenuPopup isOpen={true}>
+            <S.MobileMenuPopup isOpen={false}>
                 <Menu items={props.items}/>
                 <S.Select name='language'>
                     <option value="en">En</option>

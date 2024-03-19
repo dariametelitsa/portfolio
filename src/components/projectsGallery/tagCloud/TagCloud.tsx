@@ -1,24 +1,15 @@
 import React from 'react';
-import styled from "styled-components";
-import {mainTheme} from "../../styles/Theme";
+import { S } from "./tagCloud_Styles";
 
 export const TagCloud = (props: {tags: Array<string>}) => {
     return (
-        <StyledTagCloud>
+        <S.TagCloud>
             {
                 props.tags.map((el:string) => {
                     return (<span>{el}</span>);
                 })
             }
-        </StyledTagCloud>
+        </S.TagCloud>
     );
 };
 
-const StyledTagCloud = styled.p `
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 8px;
-    line-height: 1.5;
-    border-bottom: 1px solid ${mainTheme.colors.grey.light};
-`
