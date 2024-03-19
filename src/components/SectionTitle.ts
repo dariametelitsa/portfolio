@@ -7,7 +7,7 @@ type SectionTitlePropsType = {
 }
 export const SectionTitle = styled.h2<SectionTitlePropsType> `
     position: relative;
-    ${font({weight: 500, color: mainTheme.colors.font, Fmin: 28, Fmax: 32})}
+    ${font({weight: 500, color: mainTheme.colors.font, Fmin: 26, Fmax: 32})}
     text-transform: lowercase;
     margin-bottom: 42px;
 
