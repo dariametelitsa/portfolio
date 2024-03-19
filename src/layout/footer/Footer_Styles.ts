@@ -32,6 +32,7 @@ const Info = styled.div`
     }
 
     @media ${mainTheme.media.tablet} {
+        margin-right: 0;
         margin-bottom: 50px;
         width: 100%;
         text-align: center;
