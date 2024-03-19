@@ -10,7 +10,7 @@ export const Contacts: React.FC = () => {
         <S.Contacts>
             <Container>
                 <SectionTitle line={'127px'}>contacts</SectionTitle>
-                <FlexWrapper>
+                <FlexWrapper wrap>
                     <S.Information>I’m interested in freelance opportunities. However, if you have other request or
                         question, don’t
                         hesitate to contact me</S.Information>

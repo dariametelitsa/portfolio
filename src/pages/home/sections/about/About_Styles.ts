@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { mainTheme } from "../../../../components/styles/Theme";
 import dots from '../../../../assets/images/decoration/Dots.svg';
+import { FlexWrapper } from "../../../../components/FlexWrapper";
 
 const About = styled.section`
     position: relative;
@@ -14,6 +15,12 @@ const About = styled.section`
             right: -23px;
             top: 320px;
             z-index: 1;
+        }
+    }
+
+    @media ${mainTheme.media.tablet} {
+        ${FlexWrapper} {
+            justify-content: center;
         }
     }
 `
@@ -42,6 +49,11 @@ const Photo = styled.div`
         position: relative;
         border-bottom: 1px solid ${mainTheme.colors.accent};
     }
+
+    @media ${mainTheme.media.tablet} {
+        margin-top: 50px;
+        transform: translateY(0);
+    }
 `
 
 const Text = styled.div`
@@ -49,6 +61,10 @@ const Text = styled.div`
     p {
         padding-bottom: 27px;
         line-height: 1.5;
+    }
+    
+    @media ${mainTheme.media.tablet} {
+        width: 100%;
     }
 `
 

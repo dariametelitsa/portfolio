@@ -20,6 +20,11 @@ const Contacts = styled.section`
 const Information = styled.p`
     width: 45%;
     line-height: 1.5;
+
+    @media ${mainTheme.media.tablet} {
+        width: 100%;
+        margin-bottom: 30px;
+    }
 `
 
 export const S = {

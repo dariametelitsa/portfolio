@@ -11,7 +11,7 @@ export const Skills: React.FC = () => {
         <S.Skills>
             <Container>
                 <SectionTitle line={'239px'}>skills</SectionTitle>
-                <FlexWrapper>
+                <FlexWrapper wrap>
                     <S.Pictures/>
                     <S.SkillsBlock role={'group'}>
                         {

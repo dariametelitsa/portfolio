@@ -12,7 +12,7 @@ export const About: React.FC = () => {
         <S.About>
             <Container>
                 <SectionTitle line={'326px'}>about-me</SectionTitle>
-                <FlexWrapper>
+                <FlexWrapper wrap>
                     <S.Text>
                         <p>Hello, i’m Elias!</p>
                         <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from

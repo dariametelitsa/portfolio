@@ -7,7 +7,7 @@ type PageTitlePropsType = {
     title: string,
     info: string
 }
-export const PageTitle = (props: PageTitlePropsType) => {
+export const PageTitle: React.FC<PageTitlePropsType> = (props: PageTitlePropsType) => {
     return (
         <Container>
             <Title>{props.title}</Title>

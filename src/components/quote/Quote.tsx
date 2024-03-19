@@ -1,81 +1,26 @@
 import React from 'react';
-import styled from 'styled-components';
-import { mainTheme } from '../styles/Theme';
-import quote from './../../assets/images/decoration/quote.svg';
 import { quotesArray } from "../../assets/Data";
+import { S } from "./Quote_Styles";
 
 type QuotePropsType = {
     quote: string,
     author: string,
 }
 
-export const Quote = () => {
+export const Quote: React.FC = () => {
     return (
         <RandomQuote quote={quotesArray[randomQuoteIndex].quote}  author={quotesArray[randomQuoteIndex].author}/>
     );
 };
 
-const RandomQuote = (props: QuotePropsType) => {
+const RandomQuote: React.FC<QuotePropsType> = (props: QuotePropsType) => {
     return (
-        <StyledRandomQuote>
+        <S.RandomQuote>
             <q>{props.quote}</q>
             <cite>- {props.author}</cite>
-        </StyledRandomQuote>
+        </S.RandomQuote>
     );
 };
-
-const StyledRandomQuote = styled.div`
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 300;
-    font-style: italic;
-    line-height: 1.5;
-    padding-top: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    color: ${mainTheme.colors.font};
-
-    q {
-        position: relative;
-        padding: 32px;
-        font-size: ${mainTheme.fontSize.title};
-        font-size: ${mainTheme.fontSize.title};
-        border: 1px solid ${mainTheme.colors.grey.light};
-
-        &::before,
-        &::after {
-            content: '';
-            position: absolute;
-            width: 42px;
-            height: 29px;
-            background-image: url(${quote});
-            background-position: left;
-            background-repeat: no-repeat;
-            background-color: ${mainTheme.colors.primary};
-        }
-
-        &::before {
-            top: 0;
-            left: 10px;
-            transform: translateY(-50%);
-        }
-
-        &::after {
-            bottom: 0;
-            right: 10px;
-            transform: translateY(50%);
-        }
-    }
-
-    cite {
-        padding: 16px;
-        font-size: ${mainTheme.fontSize.title};
-        font-style: normal;
-        border: 1px solid ${mainTheme.colors.grey.light};
-        border-top: none;
-    }
-`
 
 function getRandom(min = 0, max = 100):number {
     if (min > max) {

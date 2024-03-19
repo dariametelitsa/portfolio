@@ -14,38 +14,52 @@ const SkillsBlock = styled.ul`
     align-items: flex-start;
     flex-wrap: wrap-reverse;
     height: 300px;
+    flex-grow: 0;
 
+    @media not ${mainTheme.media.decoration} {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: auto;
+
+        li {
+            flex-grow: 1;
+        }
+    }
+    
 `
 
 const Pictures = styled.div`
-    position: relative;
-    top: -30px;
-    width: 382px;
-    height: 282px;
-    background-image: url(${logo}), url(${dots}), url(${dots});
-    background-position: 48px 164px, 210px 143px, 32px 38px;
-    background-repeat: no-repeat;
-    background-size: 30%, 17%, 17%;
-    object-fit: contain;
+    @media ${mainTheme.media.decoration} {
+        position: relative;
+        top: -30px;
+        width: 382px;
+        height: 282px;
+        background-image: url(${logo}), url(${dots}), url(${dots});
+        background-position: 48px 164px, 210px 143px, 32px 38px;
+        background-repeat: no-repeat;
+        background-size: 30%, 17%, 17%;
+        object-fit: contain;
 
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        border: 1px solid ${mainTheme.colors.grey.light};
-    }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            border: 1px solid ${mainTheme.colors.grey.light};
+        }
 
-    &::before {
-        width: 86px;
-        height: 86px;
-        right: 36px;
-    }
+        &::before {
+            width: 86px;
+            height: 86px;
+            right: 36px;
+        }
 
-    &::after {
-        width: 52px;
-        height: 52px;
-        right: 0;
-        bottom: 37px;
+        &::after {
+            width: 52px;
+            height: 52px;
+            right: 0;
+            bottom: 37px;
+        }
     }
 `
 

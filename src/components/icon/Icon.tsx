@@ -7,7 +7,7 @@ type IconPropsType = {
   height?: string,
 }
 
-export const Icon = (props: IconPropsType) => {
+export const Icon: React.FC<IconPropsType> = (props: IconPropsType) => {
   return (
     <svg width={props.width || "32px"} height={props.height || "32px"} >
       <use xlinkHref={`${icons}#${props.iconId}`} />

@@ -12,6 +12,11 @@ export const AlternativeMain: React.FC = () => {
     return (
         <S.AlternativeMain>
             <Container>
+                <S.PhotoWrapper>
+                    <img src={image} height={'600px'} alt={"Web-designer."}/>
+                    <S.TextAnimation data-text={'CREATIVE'}>CREATIVE</S.TextAnimation>
+                </S.PhotoWrapper>
+
                 <S.AbsoluteWrap>
                     <S.Intro>
                         <S.Name>I'm Daria</S.Name>
@@ -20,10 +25,6 @@ export const AlternativeMain: React.FC = () => {
                     </S.Intro>
                     <SocialMenu title={'Follow me'} links={socials}></SocialMenu>
                 </S.AbsoluteWrap>
-                <S.PhotoWrapper>
-                    <img src={image} height={'600px'} alt={"Web-designer."}/>
-                    <S.TextAnimation data-text={'CREATIVE'}>CREATIVE</S.TextAnimation>
-                </S.PhotoWrapper>
 
                 <S.Status>Currently working on <span>Portfolio </span></S.Status>
                 <FlexWrapper justify={'center'}>
