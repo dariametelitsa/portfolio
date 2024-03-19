@@ -6,8 +6,10 @@ const Footer = styled.footer`
     padding: 32px 0;
     border-top: 1px solid ${mainTheme.colors.grey.light};
 
-    ${FlexWrapper} {
-        justify-content: center;
+    @media ${mainTheme.media.tablet} {
+        ${FlexWrapper} {
+            justify-content: center;
+        }
     }
 `
 
@@ -31,6 +33,8 @@ const Info = styled.div`
 
     @media ${mainTheme.media.tablet} {
         margin-bottom: 50px;
+        width: 100%;
+        text-align: center;
     }
 `
 

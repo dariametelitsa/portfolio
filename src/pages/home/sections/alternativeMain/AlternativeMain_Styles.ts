@@ -60,7 +60,7 @@ const PhotoWrapper = styled.div`
     }
 `
 
-const AbsoluteWrap = styled.div`
+const InfoWrap = styled.div`
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -70,8 +70,13 @@ const AbsoluteWrap = styled.div`
     
     @media ${mainTheme.media.tablet} {
         position: static;
+        width: 100%;
         flex-direction: column;
         align-items: center;
+        
+        div:last-child {
+            display: none;
+        }
     }
 `
 
@@ -82,6 +87,10 @@ const Intro = styled.div`
         margin: 40px 0;
         width: 100%;
         text-align: center;
+
+        a {
+            display: none;
+        }
     }
 }
 `
@@ -93,6 +102,8 @@ const Name = styled.span`
 const Title = styled.h1`
     margin: 20px 0 30px;
     color: ${mainTheme.colors.font};
+
+    ${font({Fmin: 32, Fmax: 40})}
     font-size: ${mainTheme.fontSize.headline};
 
     & strong {
@@ -107,7 +118,6 @@ const TextAnimation = styled.span`
         position: absolute;
         display: inline-block;
         text-transform: uppercase;
-            //${font({weight: 700, Fmax: 200, Fmin: 50})}
         font-size: 200px;
         font-weight: 700;
         z-index: -2;
@@ -178,7 +188,7 @@ const Status = styled.p`
 
 export const S = {
     AlternativeMain,
-    AbsoluteWrap,
+    InfoWrap,
     PhotoWrapper,
     Intro,
     Name,

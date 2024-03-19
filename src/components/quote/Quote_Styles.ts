@@ -50,6 +50,10 @@ const RandomQuote = styled.div`
         border: 1px solid ${mainTheme.colors.grey.light};
         border-top: none;
     }
+
+    @media ${mainTheme.media.tablet} {
+        padding-top: 30px;
+    }
 `
 
 export const S = {

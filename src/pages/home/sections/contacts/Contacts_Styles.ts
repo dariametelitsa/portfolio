@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import dots from "../../../../assets/images/decoration/Dots.svg";
 import { mainTheme } from "../../../../components/styles/Theme";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
 
 const Contacts = styled.section`
     position: relative;
@@ -15,6 +16,12 @@ const Contacts = styled.section`
             top: 150px;
         }
     }
+    @media ${mainTheme.media.tablet} {
+        ${FlexWrapper} {
+            justify-content: center;
+        }
+    }
+
 `
 
 const Information = styled.p`

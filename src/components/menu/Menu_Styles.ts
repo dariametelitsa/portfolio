@@ -2,11 +2,6 @@ import { mainTheme } from "../styles/Theme";
 import styled from "styled-components";
 
 const Menu = styled.nav`
-    ul {
-        display: flex;
-        flex-direction: row;
-        gap: 32px;
-    }
 
     a {
         color: inherit;

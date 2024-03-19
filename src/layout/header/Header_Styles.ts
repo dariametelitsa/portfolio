@@ -1,6 +1,5 @@
 import styled, { css } from "styled-components";
 import { mainTheme } from "../../components/styles/Theme";
-import { font } from "../../components/styles/common";
 
 const Header = styled.header`
     padding: 32px 0;
@@ -13,6 +12,12 @@ const Header = styled.header`
 const DesktopMenu = styled.div`
     display: flex;
     align-items: center;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
 `
 
 const Select = styled.select`
@@ -36,14 +41,17 @@ const Select = styled.select`
 
 //mobile
 const MobileMenu = styled.div`
+
     ul {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 32px;
     }
 `
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     position: fixed;
+    padding: 16px;
     background-color: rgba(31, 31, 31, 0.9);
     top: 0;
     left: 0;
@@ -57,19 +65,16 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
         gap: 60px;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     `}
-    ul {
-        flex-direction: column;
-    }
-
     select + a,
     select {
         margin-left: 0;
     }
-    
-    a {
-        ${font({Fmin: 16, Fmax: 32})}
+
+    a,
+    select {
+        font-size: ${mainTheme.fontSize.headline};
     }
 `
 

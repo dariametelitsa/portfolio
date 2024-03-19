@@ -17,10 +17,10 @@ export const mainTheme = {
   containerPad: '15px',
 
   media: {
-      desktop: 'screen and (min-width: 1054px)',
+    desktop: 'screen and (min-width: 1054px)',
     tablet: 'screen and (max-width: 768px)',
     mobile: 'screen and (max-width: 576px)',
-      decoration: 'screen and (min-width: 1250px)',
+    decoration: 'screen and (min-width: 1250px)',
   }
 }
 

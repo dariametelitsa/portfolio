@@ -6,7 +6,6 @@ export const Button = styled.button`
     padding: 8px 16px;
     font-weight: 500;
     font-size: ${mainTheme.fontSize.main};
-    line-height: 21px;
     border: 1px solid ${mainTheme.colors.accent};
     background-color: transparent;
     

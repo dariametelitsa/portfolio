@@ -43,4 +43,8 @@ const StyledSocialMenu = styled.div`
         display: flex;
         gap: 8px;
     }
+    
+    @media ${mainTheme.media.tablet} {
+        text-align: center;
+    }
 `

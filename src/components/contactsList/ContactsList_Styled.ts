@@ -17,11 +17,12 @@ const Contacts = styled.ul`
 `
 
 const Item = styled.li`
+    margin-top: 20px;
     padding-left: 38px;
     position: relative;
 
     & + & {
-        margin-top: 17px;
+        margin-top: 20px;
     }
     
     svg {
