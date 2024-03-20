@@ -1,8 +1,7 @@
 import React from 'react';
 import { IconLink } from "../IconLink";
 import { Icon } from "../icon/Icon";
-import styled from "styled-components";
-import { mainTheme } from "../styles/Theme";
+import { S } from "./SocialMenuStyles";
 
 export type SocialMenuPropsType = {
     title: string,
@@ -16,8 +15,8 @@ type SocialPropsType = {
 }
 export const SocialMenu = (props: SocialMenuPropsType) => {
     return (
-        <StyledSocialMenu>
-            <Title>{props.title}</Title>
+        <S.SocialMenu>
+            <S.Title>{props.title}</S.Title>
             <ul>
                 {
                     props.links.map((props: SocialPropsType) => {
@@ -27,24 +26,6 @@ export const SocialMenu = (props: SocialMenuPropsType) => {
                     })
                 }
             </ul>
-       </StyledSocialMenu>
+        </S.SocialMenu>
     );
 };
-
-const Title = styled.h4`
-    margin-bottom: 12px;
-    font-weight: 500;
-    font-size: ${mainTheme.fontSize.title};
-    color: ${mainTheme.colors.font};
-`
-
-const StyledSocialMenu = styled.div`
-    ul {
-        display: flex;
-        gap: 8px;
-    }
-    
-    @media ${mainTheme.media.tablet} {
-        text-align: center;
-    }
-`
