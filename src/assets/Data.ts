@@ -5,11 +5,34 @@ import prKahoot from "./images/projects/banner-3.jpeg";
 import prKotik from "./images/projects/banner-4.jpeg";
 import prPortfolio from "./images/projects/banner-5.png";
 import { SkillsCardPropsType } from "../components/skillsCard/SkillsCard";
+import { TabsStatusType } from "../components/tabsMenu/TabsMenu";
+
+
+export const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
+    {
+        title: 'All',
+        status: 'all',
+    },
+    {
+        title: 'Landing page',
+        status: 'landing',
+    },
+    {
+        title: 'React',
+        status: 'react',
+    },
+    {
+        title: 'HTML',
+        status: 'html',
+    },
+];
+
+export const tabsItemsNew: Array<string> = ['All', 'Landing page', 'React', 'HTML'];
 
 export const projectsBig: Array<ProjectCardPropsType> = [
     {
         src: prChert,
-        tags: ['HTML', 'SCSS', 'Python', 'Flask'],
+        tags: ['HTML', 'SCSS', 'Python', 'Flask', 'landing'],
         title: "ChertNodes",
         text: "Minecraft servers hosting",
         buttonText: "Live ~~>",
@@ -17,7 +40,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prProtect,
-        tags: ['React', 'Express', 'Discord.js', 'Node.js,', 'HTML', 'SCSS', 'Python', 'Flask'],
+        tags: ['React', 'Express', 'Discord.js', 'Node.js,', 'HTML', 'SCSS', 'Python', 'Flask', 'react'],
         title: "ProtectX",
         text: "Discord anti-crash bot",
         buttonText: "Live ~~>",
@@ -25,7 +48,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prKahoot,
-        tags: ['CSS', 'Express', 'Node.js'],
+        tags: ['CSS', 'Express', 'Node.js', 'html'],
         title: "Kahoot Answers Viewer",
         text: "Get answers to your kahoot quiz",
         buttonText: "Live ~~>",
@@ -33,7 +56,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prKotik,
-        tags: ['HTML', 'CSS', 'JS'],
+        tags: ['HTML', 'CSS', 'JS', 'html'],
         title: "Kotik Bot",
         text: "Multi-functional discord bot",
         buttonText: "Live ~~>",
