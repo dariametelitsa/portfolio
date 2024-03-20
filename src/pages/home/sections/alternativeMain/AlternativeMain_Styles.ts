@@ -9,6 +9,7 @@ import {
     GlitchPath
 } from "../../../../components/styles/animations/Animations";
 import { font } from "../../../../components/styles/common";
+import { S as Socials } from "../../../../components/socialMenu/SocialMenuStyles";
 
 const AlternativeMain = styled.section`
     position: relative;
@@ -73,10 +74,14 @@ const InfoWrap = styled.div`
         width: 100%;
         flex-direction: column;
         align-items: center;
-        
-        div:last-child {
+
+        ${Socials.SocialMenu} {
             display: none;
         }
+
+        //div:last-child {
+        //    display: none;
+        //}
     }
 `
 
