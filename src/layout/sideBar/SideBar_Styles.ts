@@ -1,7 +1,7 @@
 import { mainTheme } from "../../components/styles/Theme";
 import styled from "styled-components";
 
-const AsideBar = styled.aside`
+const SideBar = styled.aside`
     @media ${mainTheme.media.decoration} {
         position: fixed;
         top: 0;
@@ -30,6 +30,6 @@ const ListItem = styled.li`
 `
 
 export const S = {
-    AsideBar,
+    SideBar,
     ListItem
 }

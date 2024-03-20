@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Header } from './layout/header/Header';
 import { Footer } from "./layout/footer/Footer";
-import { AsideBar } from "./layout/asideBar/AsideBar";
+import { SideBar } from "./layout/sideBar/SideBar";
 import { Home } from "./pages/home/Home";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Projects } from "./pages/projects/Projects";
@@ -13,7 +13,7 @@ function App() {
     return (
         <BrowserRouter>
             <Header/>
-            <AsideBar/>
+            <SideBar/>
             <Routes>
                 <Route path="/" element={<Navigate to={'/portfolio'}/>}/>
                 <Route path="/portfolio">

@@ -2,11 +2,11 @@ import React from 'react';
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Icon } from "../../components/icon/Icon";
 import { IconLink } from "../../components/IconLink";
-import { S } from "./AsideBar_Styles";
+import { S } from "./SideBar_Styles";
 
-export const AsideBar: React.FC = () => {
+export const SideBar: React.FC = () => {
     return (
-        <S.AsideBar>
+        <S.SideBar>
             <FlexWrapper as={"ul"} direction={'column'}>
                 {
                     socials.map((s) => {
@@ -18,7 +18,7 @@ export const AsideBar: React.FC = () => {
                     })
                 }
             </FlexWrapper>
-        </S.AsideBar>
+        </S.SideBar>
     );
 };
 
