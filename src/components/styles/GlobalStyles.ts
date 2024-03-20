@@ -47,6 +47,7 @@ export const GlobalStyles = createGlobalStyle`
         color: ${mainTheme.colors.font};
         cursor: pointer;
         border: none;
+        background-color: transparent;
     }
 
     ul {
