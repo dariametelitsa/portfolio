@@ -5,7 +5,7 @@ import { ProjectsGallery } from "../../../../components/projectsGallery/Projects
 import { projectsSmall } from "../../../../assets/Data";
 import { Container } from "../../../../components/Container";
 
-export const SmallProjects = () => {
+export const SmallProjects: React.FC = () => {
     return (
         <StyledSmallProjects>
             <Container>
