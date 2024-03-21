@@ -19,7 +19,7 @@ function filterWorks(works: Array<ProjectCardPropsType>, currentFilterStatus: st
 
 
 export const CompleteApps: React.FC = () => {
-    const [currentFilterStatus, setCurrentFilterStatus] = useState('all');
+    const [currentFilterStatus, setCurrentFilterStatus] = useState(tabsItems[0]);
 
     function changeFilterStatus(value: TabsStatusType) {
         setCurrentFilterStatus(value);
