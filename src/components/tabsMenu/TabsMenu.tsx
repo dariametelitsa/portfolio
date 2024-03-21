@@ -1,10 +1,10 @@
 import React from 'react';
 import { S } from "./TabsMenu_Styles";
 
-export type TabsStatusType = 'all' | 'landing' | 'react' | 'html';
+export type TabsStatusType = 'All' | 'HTML' | 'React' | 'Styled-components' | 'SCSS' | 'CSS' | 'JS' | 'TS';
 
 export type TabMenuPropsType = {
-    tabsItems: Array<{ status: TabsStatusType, title: string }>,
+    tabsItems: Array<TabsStatusType>,
     changeFilterStatus: (value: TabsStatusType) => void,
     currentFilterStatus: string,
 }
@@ -15,8 +15,8 @@ export const TabsMenu: React.FC<TabMenuPropsType> = (props: TabMenuPropsType) =>
                 props.tabsItems.map((item => {
                     return <S.TabsItem>
                         <S.Link onClick={() => {
-                            props.changeFilterStatus(item.status)
-                        }}>{item.title}</S.Link>
+                            props.changeFilterStatus(item)
+                        }}>{item}</S.Link>
                     </S.TabsItem>
                 }))
             }

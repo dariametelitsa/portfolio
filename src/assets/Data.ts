@@ -7,32 +7,12 @@ import prPortfolio from "./images/projects/banner-5.png";
 import { SkillsCardPropsType } from "../components/skillsCard/SkillsCard";
 import { TabsStatusType } from "../components/tabsMenu/TabsMenu";
 
-
-export const tabsItems: Array<{ status: TabsStatusType, title: string }> = [
-    {
-        title: 'All',
-        status: 'all',
-    },
-    {
-        title: 'Landing page',
-        status: 'landing',
-    },
-    {
-        title: 'React',
-        status: 'react',
-    },
-    {
-        title: 'HTML',
-        status: 'html',
-    },
-];
-
-export const tabsItemsNew: Array<string> = ['All', 'Landing page', 'React', 'HTML'];
+export const tabsItems: Array<TabsStatusType> = ['All', 'HTML', 'React', 'Styled-components', 'SCSS', 'CSS', 'JS', 'TS'];
 
 export const projectsBig: Array<ProjectCardPropsType> = [
     {
         src: prChert,
-        tags: ['HTML', 'SCSS', 'Python', 'Flask', 'landing'],
+        tags: ['HTML', 'SCSS', 'TS', 'React'],
         title: "ChertNodes",
         text: "Minecraft servers hosting",
         buttonText: "Live ~~>",
@@ -40,7 +20,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prProtect,
-        tags: ['React', 'Express', 'Discord.js', 'Node.js,', 'HTML', 'SCSS', 'Python', 'Flask', 'react'],
+        tags: ['React', 'Styled-components', 'React,', 'HTML', 'SCSS', 'TS'],
         title: "ProtectX",
         text: "Discord anti-crash bot",
         buttonText: "Live ~~>",
@@ -48,7 +28,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prKahoot,
-        tags: ['CSS', 'Express', 'Node.js', 'html'],
+        tags: ['React', 'TS', 'Styled-components'],
         title: "Kahoot Answers Viewer",
         text: "Get answers to your kahoot quiz",
         buttonText: "Live ~~>",
@@ -56,7 +36,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prKotik,
-        tags: ['HTML', 'CSS', 'JS', 'html'],
+        tags: ['HTML', 'CSS', 'JS'],
         title: "Kotik Bot",
         text: "Multi-functional discord bot",
         buttonText: "Live ~~>",
@@ -64,7 +44,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
     {
         src: prPortfolio,
-        tags: ['Vue', 'TS', 'Node.js'],
+        tags: ['Vue', 'TS', 'React'],
         title: "Portfolio",
         text: "You’re using it rn",
         buttonText: "Live ~~>",

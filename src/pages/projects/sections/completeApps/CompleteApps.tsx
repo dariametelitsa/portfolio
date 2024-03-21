@@ -10,14 +10,11 @@ import { ProjectCardPropsType } from "../../../../components/projectsGallery/pro
 
 function filterWorks(works: Array<ProjectCardPropsType>, currentFilterStatus: string) {
 
-    if (currentFilterStatus === 'all') {
+    if (currentFilterStatus === 'All') {
         return works;
     }
-    let filteredWorks;
 
-    filteredWorks = works.filter((work) => work.tags.find(el => el === currentFilterStatus));
-
-    return filteredWorks;
+    return works.filter((work) => work.tags.find(el => el === currentFilterStatus));
 }
 
 
@@ -42,5 +39,5 @@ export const CompleteApps: React.FC = () => {
 };
 
 
-const StyledCompleteApps = styled.section `
+const StyledCompleteApps = styled.section`
 `

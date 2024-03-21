@@ -3,7 +3,9 @@ import { mainTheme } from "../styles/Theme";
 
 const TabsMenu = styled.ul`
     display: flex;
-    gap: 40px;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
     padding: 20px 0 40px;
 `
 
