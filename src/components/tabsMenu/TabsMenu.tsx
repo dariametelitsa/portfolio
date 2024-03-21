@@ -6,7 +6,7 @@ export type TabsStatusType = 'All' | 'HTML' | 'React' | 'Styled-components' | 'S
 export type TabMenuPropsType = {
     tabsItems: Array<TabsStatusType>,
     changeFilterStatus: (value: TabsStatusType) => void,
-    currentFilterStatus: string,
+    currentFilterStatus: TabsStatusType,
 }
 export const TabsMenu: React.FC<TabMenuPropsType> = (props: TabMenuPropsType) => {
     return (
@@ -14,9 +14,10 @@ export const TabsMenu: React.FC<TabMenuPropsType> = (props: TabMenuPropsType) =>
             {
                 props.tabsItems.map((item => {
                     return <S.TabsItem>
-                        <S.Link onClick={() => {
-                            props.changeFilterStatus(item)
-                        }}>{item}</S.Link>
+                        <S.Link active={props.currentFilterStatus === item}
+                                onClick={() => {
+                                    props.changeFilterStatus(item)
+                                }}>{item}</S.Link>
                     </S.TabsItem>
                 }))
             }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { mainTheme } from "../styles/Theme";
 
 const TabsMenu = styled.ul`
@@ -12,7 +12,7 @@ const TabsMenu = styled.ul`
 const TabsItem = styled.li`
 `
 
-const Link = styled.button`
+const Link = styled.button <{ active?: boolean }>`
     display: block;
     box-sizing: border-box;
     padding: 5px;
@@ -21,6 +21,10 @@ const Link = styled.button`
     &:hover {
         border-bottom: 1px solid ${mainTheme.colors.accent};
     }
+
+    ${props => props.active && css<{ active?: boolean }>`
+        border-bottom: 1px solid ${mainTheme.colors.accent};
+    `}
 `
 
 export const S = {
