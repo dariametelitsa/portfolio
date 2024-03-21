@@ -3,7 +3,7 @@ import { Button } from "../../../../components/Button";
 import { Container } from "../../../../components/Container";
 import { SocialMenu } from "../../../../components/socialMenu/SocialMenu";
 import image from "../../../../assets/images/main/photo_first.png";
-import { Quote } from "../../../../components/quote/Quote";
+import { Slider } from "../../../../components/quote/Quote";
 import { S } from "./AlternativeMain_Styles";
 
 
@@ -26,7 +26,7 @@ export const AlternativeMain: React.FC = () => {
                 </S.InfoWrap>
 
                 <S.Status>Currently working on <span>Portfolio </span></S.Status>
-                <Quote/>
+                <Slider/>
             </Container>
         </S.AlternativeMain>
     );

@@ -3,7 +3,7 @@ import quote from './../../assets/images/decoration/quote.svg';
 import styled from "styled-components";
 import { font } from "../styles/common";
 
-const RandomQuote = styled.div`
+const Quote = styled.div`
     ${font({family: '"IBM Plex Mono", monospace', weight: 300, Fmax: 24, Fmin: 18})}
     font-style: italic;
     line-height: 1.5;
@@ -11,6 +11,8 @@ const RandomQuote = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 100%;
+    background-color: ${mainTheme.colors.primary};
 
     color: ${mainTheme.colors.font};
 
@@ -57,5 +59,5 @@ const RandomQuote = styled.div`
 `
 
 export const S = {
-    RandomQuote
+    Quote
 }

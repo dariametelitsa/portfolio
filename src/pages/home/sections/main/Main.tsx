@@ -6,7 +6,7 @@ import logo from '../../../../assets/images/decoration/Logo1.svg';
 import dots from '../../../../assets/images/decoration/Dots.svg';
 import image from '../../../../assets/Image.png';
 import { FlexWrapper } from '../../../../components/FlexWrapper';
-import { Quote } from '../../../../components/quote/Quote';
+import { Slider } from '../../../../components/quote/Quote';
 import { Photo } from "../../../../components/Photo";
 import { Container } from "../../../../components/Container";
 
@@ -26,7 +26,7 @@ export const Main = () => {
                     </StyledPhoto>
                 </FlexWrapper>
                 <FlexWrapper justify={'center'}>
-                    <Quote/>
+                    <Slider/>
                 </FlexWrapper>
             </Container>
 
