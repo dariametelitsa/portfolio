@@ -5,6 +5,7 @@ import { SocialMenu } from "../../../../components/socialMenu/SocialMenu";
 import image from "../../../../assets/images/main/photo_first.png";
 import { Slider } from "../../../../components/quote/Quote";
 import { S } from "./AlternativeMain_Styles";
+import Typewriter from 'typewriter-effect';
 
 
 export const AlternativeMain: React.FC = () => {
@@ -19,7 +20,18 @@ export const AlternativeMain: React.FC = () => {
                 <S.InfoWrap>
                     <S.Intro>
                         <S.Name>I'm Daria</S.Name>
-                        <S.Title><strong>web designer</strong> and <strong>front-end developer</strong></S.Title>
+                        {/*<S.Title><strong>web designer</strong> and <strong>front-end developer</strong></S.Title>*/}
+                        <S.Title>
+                            <p>web designer</p>
+                            <Typewriter
+                                options={{
+                                    strings: ['front-end developer', 'web designer'],
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 150
+                                }}
+                            />
+                        </S.Title>
                         <Button as='a'>Contact me &#126;&#126;&gt;</Button>
                     </S.Intro>
                     <SocialMenu title={'Follow me'} links={socials}></SocialMenu>

@@ -11,6 +11,7 @@ import {
 import { font } from "../../../../components/styles/common";
 import { S as Socials } from "../../../../components/socialMenu/SocialMenuStyles";
 
+
 const AlternativeMain = styled.section`
     position: relative;
     overflow: hidden;
@@ -109,8 +110,8 @@ const Title = styled.h1`
     ${font({Fmin: 32, Fmax: 40})}
     font-size: ${mainTheme.fontSize.headline};
 
-    & strong {
-        color: ${mainTheme.colors.accent};
+    & p {
+        display: none;
     }
 `
 
