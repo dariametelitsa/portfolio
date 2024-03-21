@@ -4,8 +4,6 @@ import { S } from "./Quote_Styles";
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import './slider.css';
-
 
 type QuotePropsType = {
     quote: string,
