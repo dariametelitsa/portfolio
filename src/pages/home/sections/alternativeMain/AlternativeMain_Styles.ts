@@ -14,6 +14,8 @@ import { S as Socials } from "../../../../components/socialMenu/SocialMenuStyles
 const AlternativeMain = styled.section`
     position: relative;
     overflow: hidden;
+    
+    padding-bottom: 0;
 
     & ${Container} {
         position: relative;
@@ -78,10 +80,6 @@ const InfoWrap = styled.div`
         ${Socials.SocialMenu} {
             display: none;
         }
-
-        //div:last-child {
-        //    display: none;
-        //}
     }
 `
 
@@ -89,7 +87,7 @@ const Intro = styled.div`
     width: 45%;
 
     @media ${mainTheme.media.tablet} {
-        margin: 40px 0;
+        margin-top: 40px;
         width: 100%;
         text-align: center;
 

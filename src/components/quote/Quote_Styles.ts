@@ -4,22 +4,31 @@ import styled from "styled-components";
 import { font } from "../styles/common";
 
 const Quote = styled.div`
-    ${font({family: '"IBM Plex Mono", monospace', weight: 300, Fmax: 24, Fmin: 18})}
-    font-style: italic;
-    line-height: 1.5;
-    padding-top: 110px;
+    //padding-top: 110px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    //align-items: flex-end;
     width: 100%;
-    background-color: ${mainTheme.colors.primary};
-
+    ${font({family: '"IBM Plex Mono", monospace', weight: 300, Fmax: 20, Fmin: 18})}
+    font-style: italic;
+    line-height: 1.5;
     color: ${mainTheme.colors.font};
+
+
+    //margin-top: 50px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+
+    @media ${mainTheme.media.tablet} {
+        height: 400px;
+    }
 
     q {
         position: relative;
         padding: 32px;
         border: 1px solid ${mainTheme.colors.grey.light};
+        background-color: ${mainTheme.colors.primary};
 
         &::before,
         &::after {
@@ -51,10 +60,11 @@ const Quote = styled.div`
         font-style: normal;
         border: 1px solid ${mainTheme.colors.grey.light};
         border-top: none;
+        background-color: ${mainTheme.colors.primary};
     }
 
     @media ${mainTheme.media.tablet} {
-        padding-top: 30px;
+        //padding-top: 30px;
     }
 `
 
