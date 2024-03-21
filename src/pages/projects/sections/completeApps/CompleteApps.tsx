@@ -5,18 +5,7 @@ import { SectionTitle } from "../../../../components/SectionTitle";
 import { ProjectsGallery } from "../../../../components/projectsGallery/ProjectsGallery";
 import { projectsBig, tabsItems } from "../../../../assets/Data";
 import { TabsMenu, TabsStatusType } from "../../../../components/tabsMenu/TabsMenu";
-import { ProjectCardPropsType } from "../../../../components/projectsGallery/projectCard/ProjectCard";
-
-
-function filterWorks(works: Array<ProjectCardPropsType>, currentFilterStatus: string) {
-
-    if (currentFilterStatus === 'All') {
-        return works;
-    }
-
-    return works.filter((work) => work.tags.find(el => el === currentFilterStatus));
-}
-
+import { filterWorks } from "../filterFunction";
 
 export const CompleteApps: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState(tabsItems[0]);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { S } from "./TabsMenu_Styles";
 
-export type TabsStatusType = 'All' | 'HTML' | 'React' | 'Styled-components' | 'SCSS' | 'CSS' | 'JS' | 'TS';
+export type TabsStatusType = 'All' | 'HTML' | 'React' | 'Styled-components' | 'SCSS' | 'CSS' | 'JS' | 'TS' | 'Figma';
 
 export type TabMenuPropsType = {
     tabsItems: Array<TabsStatusType>,

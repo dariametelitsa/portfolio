@@ -7,7 +7,7 @@ import prPortfolio from "./images/projects/banner-5.png";
 import { SkillsCardPropsType } from "../components/skillsCard/SkillsCard";
 import { TabsStatusType } from "../components/tabsMenu/TabsMenu";
 
-export const tabsItems: Array<TabsStatusType> = ['All', 'HTML', 'React', 'Styled-components', 'SCSS', 'CSS', 'JS', 'TS'];
+export const tabsItems: Array<TabsStatusType> = ['All', 'HTML', 'React', 'Styled-components', 'SCSS', 'CSS', 'JS', 'TS', 'Figma'];
 
 export const projectsBig: Array<ProjectCardPropsType> = [
     {
@@ -54,7 +54,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
 
 export const projectsSmall: Array<ProjectCardPropsType> = [
     {
-        tags: ['Discord.js', 'TS', 'JS'],
+        tags: ['React', 'TS', 'JS'],
         title: "Bot boilerplate",
         text: "Start creating scalable discord.js bot with typescript in seconds",
         buttonText: "Github ~~>",
@@ -89,14 +89,14 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         projectLink: "#5",
     },
     {
-        tags: ['Lua', 'NeoVim'],
+        tags: ['React', 'SCSS'],
         title: "Web Dev nvim config",
         text: "Config for neovim perfect for web developer",
         buttonText: "Github ~~>",
         projectLink: "#6",
     },
     {
-        tags: ['Python', 'Quart', 'HTML'],
+        tags: ['CSS', 'Quart', 'HTML'],
         title: "Ooku",
         text: "Simple link shortener with auth",
         buttonText: "Live ~~>",
@@ -135,7 +135,6 @@ export const skillsArr: Array<SkillsCardPropsType> = [
     },
 
 ];
-
 
 export const quotesArray = [
     {
