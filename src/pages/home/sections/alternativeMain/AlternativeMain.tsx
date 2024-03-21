@@ -20,9 +20,9 @@ export const AlternativeMain: React.FC = () => {
                 <S.InfoWrap>
                     <S.Intro>
                         <S.Name>I'm Daria</S.Name>
+                        <h1>web designer</h1>
                         {/*<S.Title><strong>web designer</strong> and <strong>front-end developer</strong></S.Title>*/}
                         <S.Title>
-                            <p>web designer</p>
                             <Typewriter
                                 options={{
                                     strings: ['front-end developer', 'web designer'],

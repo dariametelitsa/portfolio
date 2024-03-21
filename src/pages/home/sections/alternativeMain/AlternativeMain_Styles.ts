@@ -8,7 +8,7 @@ import {
     GlitchOpacity,
     GlitchPath
 } from "../../../../components/styles/animations/Animations";
-import { font } from "../../../../components/styles/common";
+import { font, visuallyHidden } from "../../../../components/styles/common";
 import { S as Socials } from "../../../../components/socialMenu/SocialMenuStyles";
 
 
@@ -96,23 +96,23 @@ const Intro = styled.div`
             display: none;
         }
     }
-}
+
+    h1 {
+        ${visuallyHidden()};
+    }
 `
 
 const Name = styled.span`
     ${font({Fmin: 22, Fmax: 16})}
 `
 
-const Title = styled.h1`
+const Title = styled.span`
     margin: 20px 0 30px;
     color: ${mainTheme.colors.font};
 
     ${font({Fmin: 32, Fmax: 40})}
     font-size: ${mainTheme.fontSize.headline};
 
-    & p {
-        display: none;
-    }
 `
 
 const TextAnimation = styled.span`
