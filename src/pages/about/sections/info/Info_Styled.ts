@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { mainTheme } from "../../../../components/styles/Theme";
 
+const Info = styled.div`
+`
+
 const Photo = styled.div`
     position: relative;
     transform: translateY(-13%);
@@ -36,6 +39,7 @@ const Text = styled.div`
 `
 
 export const S = {
+    Info,
     Photo,
     Text
 }

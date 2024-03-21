@@ -5,13 +5,13 @@ import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Container } from "../../../../components/Container";
 import { S } from "./Info_Styled";
 
-export const Info = () => {
+export const Info: React.FC = () => {
     return (
-        <section>
+        <S.Info>
             <Container>
                 <FlexWrapper wrap>
                     <S.Text>
-                        <p>Hello, i’m Elias!</p>
+                        <p>Hello, i’m Daria!</p>
                         <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from
                             scratch and raise them into modern user-friendly web experiences.</p>
                         <p>Transforming my creativity and knowledge intoZ a websites has been my passion for over a year. I
@@ -23,7 +23,7 @@ export const Info = () => {
                     </S.Photo>
                 </FlexWrapper>
             </Container>
-        </section>
+        </S.Info>
     );
 };
 

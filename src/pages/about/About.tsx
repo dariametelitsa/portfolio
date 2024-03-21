@@ -6,9 +6,11 @@ import { Skills } from "./sections/skills/Skills";
 export const About = () => {
     return (
         <main>
-            <PageTitle title={'about-me'} info={'Who am i?'}/>
-            <Info />
-            <Skills/>
+            <section>
+                <PageTitle title={'about-me'} info={'Who am i?'}/>
+                <Info/>
+                <Skills/>
+            </section>
         </main>
     );
 };
