@@ -110,8 +110,7 @@ const Title = styled.span`
     margin: 20px 0 30px;
     color: ${mainTheme.colors.font};
 
-    ${font({Fmin: 32, Fmax: 40})}
-    font-size: ${mainTheme.fontSize.headline};
+    ${font({Fmin: 26, Fmax: 40})}
 
 `
 

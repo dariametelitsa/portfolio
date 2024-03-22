@@ -49,7 +49,7 @@ export const Slider: React.FC = () => {
             spaceBetween={20}
             className="mySwiper3">
             {
-                quotesArray.map(quote => {
+                quotesArray.filter(el => el.quote.length < 200).map(quote => {
                     return (
                         <SwiperSlide>
                             <Quote quote={quote.quote} author={quote.author}/>

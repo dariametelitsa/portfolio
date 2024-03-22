@@ -21,7 +21,7 @@ const Quote = styled.div`
     align-items: center;
 
     @media ${mainTheme.media.tablet} {
-        height: 400px;
+        height: 320px;
     }
 
     q {
