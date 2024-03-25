@@ -5,6 +5,7 @@ import { Container } from "../../../../components/Container";
 import { ProjectsGallery } from "../../../../components/projectsGallery/ProjectsGallery";
 import { projectsBig } from "../../../../assets/Data";
 import { S } from "./Projects_Styled";
+import { Fade } from "react-awesome-reveal";
 
 export const Projects: React.FC = () => {
     return (
@@ -14,7 +15,9 @@ export const Projects: React.FC = () => {
                     <SectionTitle line={'511px'}>projects</SectionTitle>
                     <S.Link href='#2'>View all &#126;&#126;&gt;</S.Link>
                 </FlexWrapper>
-                <ProjectsGallery projects={projectsBig} size={3} />
+                <Fade duration={3000}>
+                    <ProjectsGallery projects={projectsBig} size={3}/>
+                </Fade>
             </Container>
         </S.Project>
     );

@@ -17,6 +17,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
         text: "Minecraft servers hosting",
         buttonText: "Live ~~>",
         projectLink: "#1",
+        id: 1,
     },
     {
         src: prProtect,
@@ -25,6 +26,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
         text: "Discord anti-crash bot",
         buttonText: "Live ~~>",
         projectLink: "#2",
+        id: 2,
     },
     {
         src: prKahoot,
@@ -33,6 +35,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
         text: "Get answers to your kahoot quiz",
         buttonText: "Live ~~>",
         projectLink: "#3",
+        id: 3,
     },
     {
         src: prKotik,
@@ -41,6 +44,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
         text: "Multi-functional discord bot",
         buttonText: "Live ~~>",
         projectLink: "#4",
+        id: 4,
     },
     {
         src: prPortfolio,
@@ -49,6 +53,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
         text: "You’re using it rn",
         buttonText: "Live ~~>",
         projectLink: "#5",
+        id: 5,
     },
 ];
 
@@ -59,6 +64,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Start creating scalable discord.js bot with typescript in seconds",
         buttonText: "Github ~~>",
         projectLink: "#1",
+        id: 1,
     },
     {
         tags: ['VUE', 'CSS', 'JS'],
@@ -66,6 +72,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Front-end of my future blog website written in vue. Front-end of my future blog website written in vue",
         buttonText: "Github ~~>",
         projectLink: "#2",
+        id: 2,
     },
     {
         tags: ['Figma'],
@@ -73,6 +80,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Figma landing page about service for viewing chess tournaments",
         buttonText: "Figma ~~>",
         projectLink: "#3",
+        id: 3,
     },
     {
         tags: ['Figma'],
@@ -80,6 +88,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Figma template for website about anti-raid, anti-crash discord bot",
         buttonText: "Figma ~~>",
         projectLink: "#4",
+        id: 4,
     },
     {
         tags: ['HTML', 'CSS'],
@@ -87,6 +96,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Collection of my different little projects in css",
         buttonText: "Live ~~>",
         projectLink: "#5",
+        id: 5,
     },
     {
         tags: ['React', 'SCSS'],
@@ -94,6 +104,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Config for neovim perfect for web developer",
         buttonText: "Github ~~>",
         projectLink: "#6",
+        id: 6,
     },
     {
         tags: ['CSS', 'Quart', 'HTML'],
@@ -101,6 +112,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Simple link shortener with auth",
         buttonText: "Live ~~>",
         projectLink: "#7",
+        id: 7,
     },
     {
         tags: ['Figma'],
@@ -108,6 +120,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
         text: "Figma template website for my school",
         buttonText: "Figma ~~>",
         projectLink: "#8",
+        id: 8,
     },
 ];
 

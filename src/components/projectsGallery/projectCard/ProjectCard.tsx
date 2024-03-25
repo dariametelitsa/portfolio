@@ -11,6 +11,7 @@ export type ProjectCardPropsType = {
     text: string,
     buttonText: string,
     projectLink: string,
+    id: number,
 };
 export const ProjectCard: React.FC<ProjectCardPropsType> = (props: ProjectCardPropsType) => {
     return (
