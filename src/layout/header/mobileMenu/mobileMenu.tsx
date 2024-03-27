@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from "../../../components/menu/Menu";
-import { S } from "../Header_Styles";
+import { S } from "../HeaderStyles";
 import { Button } from "../../../components/Button";
 import { MenuData } from "../Header";
 

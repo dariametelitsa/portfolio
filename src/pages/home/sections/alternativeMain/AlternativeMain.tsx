@@ -4,7 +4,7 @@ import { Container } from "../../../../components/Container";
 import { SocialMenu } from "../../../../components/socialMenu/SocialMenu";
 import image from "../../../../assets/images/main/photo_first.png";
 import { Slider } from "../../../../components/quote/Quote";
-import { S } from "./AlternativeMain_Styles";
+import { S } from "./AlternativeMainStyles";
 import Typewriter from 'typewriter-effect';
 
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { SectionTitle } from "../../../../components/SectionTitle";
 import { Container } from "../../../../components/Container";
-import { S } from "./About_Styles";
+import { S } from "./AboutStyles";
 import { Info } from '../../../about/sections/info/Info';
 
 export const About: React.FC = () => {

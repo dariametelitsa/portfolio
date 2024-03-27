@@ -2,7 +2,7 @@ import React from 'react';
 import { Photo } from "../../Photo";
 import { Button } from "../../Button";
 import { TagCloud } from "../tagCloud/TagCloud";
-import { S } from "../ProjectsGallery_Styles";
+import { S } from "../ProjectsGalleryStyles";
 
 export type ProjectCardPropsType = {
     src?: string,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { quotesArray } from "../../assets/Data";
-import { S } from "./Quote_Styles";
+import { S } from "./QuoteStyles";
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

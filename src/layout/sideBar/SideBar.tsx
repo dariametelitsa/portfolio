@@ -2,7 +2,7 @@ import React from 'react';
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Icon } from "../../components/icon/Icon";
 import { IconLink } from "../../components/IconLink";
-import { S } from "./SideBar_Styles";
+import { S } from "./SideBarStyles";
 
 export const SideBar: React.FC = () => {
     return (

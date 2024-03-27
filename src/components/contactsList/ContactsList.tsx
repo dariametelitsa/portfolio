@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from "../icon/Icon";
-import { S } from "./ContactsList_Styled";
+import { S } from "./ContactsListStyles";
 
 export const ContactsList: React.FC = () => {
     return (

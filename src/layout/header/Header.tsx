@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from '../../components/logo/Logo';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { Container } from "../../components/Container";
-import { S } from "./Header_Styles";
+import { S } from "./HeaderStyles";
 import DesktopMenu from "./desktopMenu/DesktopMenu";
 import MobileMenu from "./mobileMenu/mobileMenu";
 

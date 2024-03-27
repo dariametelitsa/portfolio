@@ -4,7 +4,7 @@ import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Container } from "../../../../components/Container";
 import { ProjectsGallery } from "../../../../components/projectsGallery/ProjectsGallery";
 import { projectsBig } from "../../../../assets/Data";
-import { S } from "./Projects_Styled";
+import { S } from "./ProjectsStyles";
 import { Fade } from "react-awesome-reveal";
 
 export const Projects: React.FC = () => {

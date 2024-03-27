@@ -3,7 +3,7 @@ import { Photo } from "../../../../components/Photo";
 import image from "../../../../assets/images/about/photo_about.png";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Container } from "../../../../components/Container";
-import { S } from "./Info_Styled";
+import { S } from "./InfoStyles";
 
 export const Info: React.FC = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { ProjectCard, ProjectCardPropsType } from "./projectCard/ProjectCard";
-import { S } from "./ProjectsGallery_Styles";
+import { S } from "./ProjectsGalleryStyles";
 import { AnimatePresence, motion } from "framer-motion";
 
 type ProjectsGalleryPropsType = {

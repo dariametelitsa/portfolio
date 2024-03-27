@@ -3,7 +3,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Logo } from "../../components/logo/Logo";
 import { Container } from "../../components/Container";
 import { SocialMenu } from "../../components/socialMenu/SocialMenu";
-import { S } from "./Footer_Styles";
+import { S } from "./FooterStyles";
 
 export const Footer: React.FC = () => {
     return (

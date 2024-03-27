@@ -1,5 +1,5 @@
 import React from 'react';
-import { S } from "./tagCloud_Styles";
+import { S } from "./TagCloudStyles";
 
 export const TagCloud = (props: {tags: Array<string>}) => {
     return (

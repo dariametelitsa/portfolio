@@ -1,5 +1,5 @@
 import React from 'react';
-import { S } from "./TabsMenu_Styles";
+import { S } from "./TabsMenuStyles";
 
 export type TabsStatusType = 'All' | 'HTML' | 'React' | 'Styled-components' | 'SCSS' | 'CSS' | 'JS' | 'TS' | 'Figma';
 

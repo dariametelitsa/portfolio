@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuData } from '../../layout/header/Header';
 import { Link } from "react-router-dom";
-import { S } from "./Menu_Styles";
+import { S } from "./MenuStyles";
 
 export const Menu: React.FC<{ items: Array<MenuData> }> = (props: { items: Array<MenuData> }) => {
     return (

@@ -4,7 +4,7 @@ import { SkillsCard, SkillsCardPropsType } from "../../../../components/skillsCa
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Container } from "../../../../components/Container";
 import { skillsArr } from "../../../../assets/Data";
-import { S } from "./Skills_Styles";
+import { S } from "./SkillsStyles";
 
 export const Skills: React.FC = () => {
     return (
