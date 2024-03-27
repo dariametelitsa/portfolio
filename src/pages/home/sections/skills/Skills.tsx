@@ -1,10 +1,11 @@
 import React from 'react';
 import { SectionTitle } from "../../../../components/SectionTitle";
-import { SkillsCard, SkillsCardPropsType } from "../../../../components/skillsCard/SkillsCard";
+import { SkillsCard } from "../../../../components/skillsCard/SkillsCard";
 import { FlexWrapper } from "../../../../components/FlexWrapper";
 import { Container } from "../../../../components/Container";
 import { skillsArr } from "../../../../assets/Data";
 import { S } from "./SkillsStyles";
+import { SkillsCardProps } from "../../../../assets/Types";
 
 export const Skills: React.FC = () => {
     return (
@@ -15,7 +16,7 @@ export const Skills: React.FC = () => {
                     <S.Pictures/>
                     <S.SkillsBlock role={'group'}>
                         {
-                            skillsArr.slice(0, 5).reverse().map((el: SkillsCardPropsType) => {
+                            skillsArr.slice(0, 5).reverse().map((el: SkillsCardProps) => {
                                 return <SkillsCard title={el.title} skills={el.skills}/>
                             })
                         }

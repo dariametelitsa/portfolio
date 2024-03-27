@@ -1,15 +1,13 @@
-import { ProjectCardPropsType } from "../components/projectsGallery/projectCard/ProjectCard";
 import prChert from "./images/projects/banner-1.png";
 import prProtect from "./images/projects/banner-2.jpeg";
 import prKahoot from "./images/projects/banner-3.jpeg";
 import prKotik from "./images/projects/banner-4.jpeg";
 import prPortfolio from "./images/projects/banner-5.png";
-import { SkillsCardPropsType } from "../components/skillsCard/SkillsCard";
-import { TabsStatusType } from "../components/tabsMenu/TabsMenu";
+import { ProjectCardProps, SkillsCardProps, TabsStatusProps } from "./Types";
 
-export const tabsItems: Array<TabsStatusType> = ['All', 'HTML', 'React', 'Styled-components', 'SCSS', 'CSS', 'JS', 'TS', 'Figma'];
+export const tabsItems: Array<TabsStatusProps> = ['All', 'HTML', 'React', 'Styled-components', 'SCSS', 'CSS', 'JS', 'TS', 'Figma'];
 
-export const projectsBig: Array<ProjectCardPropsType> = [
+export const projectsBig: Array<ProjectCardProps> = [
     {
         src: prChert,
         tags: ['HTML', 'SCSS', 'TS', 'React'],
@@ -57,7 +55,7 @@ export const projectsBig: Array<ProjectCardPropsType> = [
     },
 ];
 
-export const projectsSmall: Array<ProjectCardPropsType> = [
+export const projectsSmall: Array<ProjectCardProps> = [
     {
         tags: ['React', 'TS', 'JS'],
         title: "Bot boilerplate",
@@ -124,8 +122,7 @@ export const projectsSmall: Array<ProjectCardPropsType> = [
     },
 ];
 
-
-export const skillsArr: Array<SkillsCardPropsType> = [
+export const skillsArr: Array<SkillsCardProps> = [
     {
         title: 'Languages',
         skills: ['TypeScript', 'Lua', 'Python', 'Javascript'],

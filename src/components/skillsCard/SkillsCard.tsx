@@ -1,12 +1,8 @@
 import React from 'react';
 import { S } from "./SkillsCardStyles";
+import { SkillsCardProps } from "../../assets/Types";
 
-export type SkillsCardPropsType = {
-    title: string,
-    skills: Array<string>,
-    grow?: boolean,
-}
-export const SkillsCard: React.FC<SkillsCardPropsType> = (props: SkillsCardPropsType) => {
+export const SkillsCard: React.FC<SkillsCardProps> = (props: SkillsCardProps) => {
     return (
         <S.SkillsCard grow={props.grow}>
             <S.Title>{props.title}</S.Title>

@@ -1,11 +1,9 @@
 import styled, { css } from "styled-components";
 import { mainTheme } from "./styles/Theme";
 import { font } from "./styles/common";
+import { SectionTitleProps } from "../assets/Types";
 
-type SectionTitlePropsType = {
-    line?: string;
-}
-export const SectionTitle = styled.h2<SectionTitlePropsType> `
+export const SectionTitle = styled.h2<SectionTitleProps>`
     position: relative;
     ${font({weight: 500, color: mainTheme.colors.font, Fmin: 26, Fmax: 32})}
     text-transform: lowercase;
@@ -20,7 +18,7 @@ export const SectionTitle = styled.h2<SectionTitlePropsType> `
 
 
     @media ${mainTheme.media.decoration} {
-        ${props => props.line && css<SectionTitlePropsType>`
+        ${props => props.line && css<SectionTitleProps>`
             &::after {
                 content: '';
                 position: absolute;

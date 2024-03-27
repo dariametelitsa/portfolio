@@ -1,14 +1,8 @@
 import { mainTheme } from "./Theme";
+import { FontProps } from "../../assets/Types";
 
-type FontPropsType = {
-    family?: string,
-    weight?: number,
-    color?: string,
-    lineHeight?: number,
-    Fmin?: number,
-    Fmax?: number,
-}
-export const font = ({family, weight, color, lineHeight, Fmin, Fmax}: FontPropsType) => `
+
+export const font = ({family, weight, color, lineHeight, Fmin, Fmax}: FontProps) => `
     font-family: ${family || '"Fira Code", monospace'};
     font-weight: ${weight || 400};
     color: ${color || mainTheme.colors.font};

@@ -1,14 +1,9 @@
 import React from 'react';
 import { S } from "./TabsMenuStyles";
+import { TabMenuProps } from "../../assets/Types";
 
-export type TabsStatusType = 'All' | 'HTML' | 'React' | 'Styled-components' | 'SCSS' | 'CSS' | 'JS' | 'TS' | 'Figma';
 
-export type TabMenuPropsType = {
-    tabsItems: Array<TabsStatusType>,
-    changeFilterStatus: (value: TabsStatusType) => void,
-    currentFilterStatus: TabsStatusType,
-}
-export const TabsMenu: React.FC<TabMenuPropsType> = (props: TabMenuPropsType) => {
+export const TabsMenu: React.FC<TabMenuProps> = (props: TabMenuProps) => {
     return (
         <S.TabsMenu>
             {

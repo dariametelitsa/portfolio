@@ -1,6 +1,6 @@
-import { ProjectCardPropsType } from "../../../components/projectsGallery/projectCard/ProjectCard";
+import { ProjectCardProps } from "../../../assets/Types";
 
-export function filterWorks(works: Array<ProjectCardPropsType>, currentFilterStatus: string) {
+export function filterWorks(works: Array<ProjectCardProps>, currentFilterStatus: string) {
 
     if (currentFilterStatus === 'All') {
         return works;

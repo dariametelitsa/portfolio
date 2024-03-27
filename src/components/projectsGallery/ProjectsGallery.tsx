@@ -1,18 +1,16 @@
 import React from 'react';
-import { ProjectCard, ProjectCardPropsType } from "./projectCard/ProjectCard";
+import { ProjectCard } from "./projectCard/ProjectCard";
 import { S } from "./ProjectsGalleryStyles";
 import { AnimatePresence, motion } from "framer-motion";
+import { ProjectCardProps, ProjectsGalleryProps } from "../../assets/Types";
 
-type ProjectsGalleryPropsType = {
-    projects: Array<ProjectCardPropsType>,
-    size?: number,
-}
-export const ProjectsGallery: React.FC<ProjectsGalleryPropsType> = (props: ProjectsGalleryPropsType) => {
+
+export const ProjectsGallery: React.FC<ProjectsGalleryProps> = (props: ProjectsGalleryProps) => {
     return (
         <S.GridWrap role={'group'}>
             <AnimatePresence>
             {
-                props.projects.slice(0, props.size || props.projects.length).map((el: ProjectCardPropsType) => {
+                props.projects.slice(0, props.size || props.projects.length).map((el: ProjectCardProps) => {
                     return (
                         <motion.div
                             initial={{x: 300, opacity: 0}}

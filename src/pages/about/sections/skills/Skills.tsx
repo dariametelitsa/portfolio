@@ -2,8 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 import { SectionTitle } from "../../../../components/SectionTitle";
 import { Container } from "../../../../components/Container";
-import { SkillsCard, SkillsCardPropsType } from "../../../../components/skillsCard/SkillsCard";
+import { SkillsCard } from "../../../../components/skillsCard/SkillsCard";
 import { skillsArr } from "../../../../assets/Data";
+import { SkillsCardProps } from "../../../../assets/Types";
 
 export const Skills = () => {
     return (
@@ -12,7 +13,7 @@ export const Skills = () => {
                 <SectionTitle>skills</SectionTitle>
                 <SkillsBlock role={'group'}>
                     {
-                        skillsArr.map((el: SkillsCardPropsType) => {
+                        skillsArr.map((el: SkillsCardProps) => {
                             return <SkillsCard title={el.title} skills={el.skills} grow/>
                         })
                     }

@@ -1,13 +1,8 @@
 import React from 'react';
 import icons from './../../assets/images/icons.svg';
+import { IconProps } from "../../assets/Types";
 
-type IconPropsType = {
-  iconId: string,
-  width?: string,
-  height?: string,
-}
-
-export const Icon: React.FC<IconPropsType> = (props: IconPropsType) => {
+export const Icon: React.FC<IconProps> = (props: IconProps) => {
   return (
     <svg width={props.width || "32px"} height={props.height || "32px"} >
       <use xlinkHref={`${icons}#${props.iconId}`} />

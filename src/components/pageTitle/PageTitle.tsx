@@ -3,12 +3,9 @@ import { Container } from "../Container";
 import styled from "styled-components";
 import { mainTheme } from "../styles/Theme";
 import { font } from "../styles/common";
+import { PageTitleProps } from "../../assets/Types";
 
-type PageTitlePropsType = {
-    title: string,
-    info: string
-}
-export const PageTitle: React.FC<PageTitlePropsType> = (props: PageTitlePropsType) => {
+export const PageTitle: React.FC<PageTitleProps> = (props: PageTitleProps) => {
     return (
         <Container>
             <Title>{props.title}</Title>

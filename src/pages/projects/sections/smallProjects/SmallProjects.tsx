@@ -4,13 +4,14 @@ import { SectionTitle } from "../../../../components/SectionTitle";
 import { ProjectsGallery } from "../../../../components/projectsGallery/ProjectsGallery";
 import { projectsSmall, tabsItems } from "../../../../assets/Data";
 import { Container } from "../../../../components/Container";
-import { TabsMenu, TabsStatusType } from "../../../../components/tabsMenu/TabsMenu";
+import { TabsMenu } from "../../../../components/tabsMenu/TabsMenu";
 import { filterWorks } from "../filterFunction";
+import { TabsStatusProps } from "../../../../assets/Types";
 
 export const SmallProjects: React.FC = () => {
     const [currentFilterStatus, setCurrentFilterStatus] = useState(tabsItems[0]);
 
-    function changeFilterStatus(value: TabsStatusType) {
+    function changeFilterStatus(value: TabsStatusProps) {
         setCurrentFilterStatus(value);
     }
 
