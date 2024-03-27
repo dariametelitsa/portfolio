@@ -58,15 +58,20 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     right: 0;
     bottom: 0;
     z-index: 999;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+
     backdrop-filter: blur(5px);
+    transform: translateY(-100%);
+
+    transition: 0.6s ease-in;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
-        display: flex;
         gap: 60px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
+        transform: translateY(0);
     `}
     select + a,
     select {
